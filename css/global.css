@@ -1,0 +1,77 @@
+:root {
+  --height-header: 97.5px;
+  --height-banner: calc(100vh - var(--height-header));
+
+  --text-primary-color: #808089;
+}
+
+html {
+  font-family: "Inter", sans-serif !important;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: rgb(128, 128, 137);
+  background-color: #efefef;
+}
+.my-btn {
+  cursor: pointer;
+  border-radius: 10px;
+  color: rgb(128, 128, 137);
+  transition: 0.2s linear;
+}
+.my-btn.active {
+  color: #0060ff;
+  border: none;
+  font-weight: 600;
+}
+.my-btn:hover {
+  background-color: rgba(128, 128, 137, 0.12);
+}
+.my-btn.active:hover {
+  background-color: rgba(0, 96, 255, 0.12);
+}
+.col-half-offset {
+  margin-left: 4.166666667%;
+}
+.skeleton {
+  background: #fff;
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(8%, rgba(130, 130, 130, 0.2)),
+    color-stop(18%, rgba(130, 130, 130, 0.3)),
+    color-stop(33%, rgba(130, 130, 130, 0.2))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(130, 130, 130, 0.2) 8%,
+    rgba(130, 130, 130, 0.3) 18%,
+    rgba(130, 130, 130, 0.2) 33%
+  );
+  background-size: 800px 100px;
+  animation: wave-squares 2s infinite ease-out;
+}
+@keyframes wave-lines {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+@keyframes wave-squares {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}

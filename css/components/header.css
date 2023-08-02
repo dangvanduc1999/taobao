@@ -1,0 +1,15 @@
+.main-header .my-logo {
+  width: 57px;
+  height: 40px;
+}
+.main-header .logo-avatar {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.main-header .my-divider {
+  width: 2px;
+  height: 20px;
+  background: rgb(235, 235, 240);
+}
