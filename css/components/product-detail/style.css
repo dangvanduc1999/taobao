@@ -1,0 +1,214 @@
+.big-image {
+  height: 400px;
+}
+.list-small-image {
+  height: 60px;
+}
+.product-detail__title {
+  margin: 0px 0px 4px;
+  color: rgb(36, 36, 36);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 35px;
+  word-break: break-word;
+}
+.price-current {
+  font-size: 32px;
+  line-height: 40px;
+  margin-right: 8px;
+  font-weight: 500;
+  color: rgb(255, 66, 78);
+}
+.price-origin {
+  color: rgb(128, 128, 137);
+  text-decoration: line-through;
+  font-size: 14px;
+  line-height: 20px;
+}
+.product-detail__item {
+  margin-bottom: 20px;
+}
+.product-detail__item span:first-child {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.package-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jvxsod:hover,
+.jvxsod.active {
+  border: 1px solid rgb(13, 92, 182);
+  background-color: rgb(229, 242, 255);
+}
+.jvxsod {
+  cursor: pointer;
+  margin: 8px 10px 0px 0px;
+  padding: 2px;
+  color: rgb(36, 36, 36);
+  font-size: 13px;
+  width: 144px;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid transparent;
+  outline: 0px;
+  border-radius: 4px;
+}
+.jvxsod .option-figure {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.jvxsod .selected-indicator {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  /* display: none; */
+}
+.jvxsod .option-label {
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-align: left;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  overflow: hidden;
+  line-height: 16px;
+  margin: 6px 8px;
+  overflow-wrap: anywhere;
+}
+.fWjUGo {
+  object-fit: contain;
+}
+.domestic-price {
+  color: #c00;
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 400;
+}
+.group-input {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.group-input button:first-child {
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  padding: 4px;
+}
+.group-input input {
+  width: 40px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+.group-input button,
+.group-input input {
+  height: 30px;
+  color: rgb(36, 36, 36);
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+  border-color: rgb(236, 236, 236);
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.group-input button:last-child {
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  padding: 4px;
+}
+.group-input input {
+  width: 40px;
+  border: 1px solid rgb(236, 236, 236);
+}
+.total-price {
+  color: #c00;
+  font-size: 24px;
+  font-weight: 400;
+}
+.remark {
+  flex: 1;
+  outline: none;
+}
+.group-button {
+  margin-top: 16px;
+  flex: 1 1 0%;
+  display: flex;
+}
+.btn.btn-add-to-cart {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 57, 69);
+}
+.btn.btn-add-to-cart.installment-payment {
+  border: 1px solid rgb(13, 92, 182);
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgb(13, 92, 182);
+  flex-direction: column;
+  text-transform: unset;
+  background: white;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-left: 12px;
+  align-items: center;
+}
+
+.title-cart {
+  background-color: #0060ff;
+  color: #ffffff;
+  padding: 10px 5px;
+}
+.title-cart h3 {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.detail-cart-item__des {
+  flex: 1;
+  margin-left: 10px;
+}
+.logo-product {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.detail-cart-item__des .product__name {
+  font-size: 13px;
+  display: block;
+  display: -webkit-box;
+  font-size: 14px;
+  -webkit-line-clamp: 2; /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #808089;
+}
+.detail-cart-item__des .product__name:hover {
+  color: rgb(255, 57, 69);
+}
+.detail-cart-item__des .price {
+  color: rgb(255, 57, 69);
+  font-weight: 500;
+  font-size: 14px;
+}
+.icon {
+  cursor: pointer;
+}
+.detail-cart-list {
+  max-height: 500px;
+  overflow-y: auto;
+  min-height: 200px;
+}
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev::after {
+  display: none;
+}
