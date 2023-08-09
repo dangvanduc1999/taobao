@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home Tao bao</title>
+    <title>Admin Tao bao</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="../css/components/footer.css"/>
     <link rel="stylesheet" href="../css/components/home/banner.css"/>
     <link rel="stylesheet" href="../css/components/modal-login.css"/>
+    <link rel="stylesheet" href="../css/components/admin/sidebar.css">
+    <link rel="stylesheet" href="../css/components/admin/create-form-product.css">
+
 </head>
 <body>
 <!-- header -->
@@ -48,6 +51,7 @@
                             </li>
                         </ul>
                         <div class="input-group me-5 flex-grow-1" style="flex: 1">
+
                   <span class="input-group-text">
                     <i class="ri-search-line"></i>
                   </span>
@@ -59,13 +63,14 @@
                                     aria-label="Recipient's username"
                                     aria-describedby="button-addon2"
                             />
+                            />
                             <a
                                     href="product-listing.html"
                                     class="btn btn-outline-secondary"
                                     type="button"
                                     id="button-addon2"
-                            />
-                            Tìm kiếm
+                            >
+                                Tìm kiếm
                             </a>
                         </div>
                     </div>
@@ -75,9 +80,9 @@
                             class="btn me-3 d-block d-flex align-items-center my-btn"
                             href="create-form.html"
                             role="button"
-                    />
-                    <i class="ri-home-5-line"></i>
-                    <span class="d-inline-block ms-1">Trang chủ</span>
+                    >
+                        <i class="ri-home-5-line"></i>
+                        <span class="d-inline-block ms-1">Trang chủ</span>
                     </a>
                     <!-- has active when matching route class "active"-->
 
@@ -126,50 +131,344 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="my-banner">
-        <div id="carouselExample" class="carousel h-100 slide">
-            <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
-                    <img
-                            src="https://plus.unsplash.com/premium_photo-1671211754320-08fd8bfc26aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            class="d-block w-100 h-100 object-fit-cover"
-                            alt="..."
-                    />
+<!-- admin area -->
+<div class="container mt-4">
+    <div class="row gx-2">
+        <div class="col-3">
+            <aside class="my-sidebar">
+                <div class="my__sidebar-logo">
+                    <img src="https://lh3.googleusercontent.com/-VDTg2rLk8Cs/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcb1bhGTX56jCLWn6gE-Fo-At2Y41Q/mo/photo.jpg"
+                         alt="avatar"/>
+                    <div class="info">Tài khoản của<strong>Đặng Văn đức</strong></div>
                 </div>
-                <div class="carousel-item h-100">
-                    <img
-                            src="https://images.unsplash.com/photo-1486072889922-9aea1fc0a34d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            class="d-block w-100 h-100 object-fit-cover"
-                            alt="..."
-                    />
+                <ul class="my__sidebar-account  ">
+                    <li>
+                        <a class="" href="/customer/account/edit">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                 viewBox="0 0 24 24" height="1em" width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                            </svg>
+                            <span>Thông tin tài khoản</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/customer/notification">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                 viewBox="0 0 24 24" height="1em" width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path>
+                            </svg>
+                            <span>Thông báo của tôi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="status-order.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                 viewBox="0 0 24 24" height="1em" width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+                            </svg>
+                            <span>Quản lý đơn hàng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="is-active" href="/return-tracking/history">
+                            <img class="icon"
+                                 src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/order_return.svg"/>
+                            <span>Tạo đơn và ký gửi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/customer/address">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                 viewBox="0 0 24 24" height="1em" width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                            </svg>
+                            <span>Sổ địa chỉ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/customer/paymentcard">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                 viewBox="0 0 24 24" height="1em" width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path>
+                            </svg>
+                            <span>Thông tin thanh toán </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/review-hub">
+                            <img class="icon"
+                                 src="https://frontend.tikicdn.com/_desktop-next/static/img/account/reviewhub.png"/>
+                            <span>Đánh giá sản phẩm</span></a>
+                    </li>
+                    <li>
+                        <a href="/danh-rieng-cho-ban">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                 viewBox="0 0 24 24" height="1em" width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path>
+                            </svg>
+                            <span>Sản phẩm bạn đã xem</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/customer/wishlist">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                 viewBox="0 0 24 24" height="1em" width="1em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                            </svg>
+                            <span>Sản phẩm yêu thích</span>
+                        </a>
+                    </li>
+                    <li><a class="" href="/customer/review">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                             viewBox="0 0 24 24" height="1em" width="1em"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+                        </svg>
+                        <span>Nhận xét của tôi</span></a></li>
+                    <li>
+                        <a href="/astra-rewards/home">
+                            <img class="icon"
+                                 src="https://salt.tikicdn.com/ts/ta/50/d3/26/9fa51b04c04851fbe4025c1c9f3111c7.png">
+                            <div class="group-info">
+                                <span>Astra Rewards</span>
+                                <span
+                                        style="color: rgb(128, 128, 137);">Bạn là <b
+                                        style="color: rgb(39, 39, 42);">Khách hàng</b>
+                            </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/chia-se-co-loi">
+                            <img class="icon"
+                                 src="https://frontend.tikicdn.com/_desktop-next/static/img/share-to-earn/icon-s2e.svg"/>
+                            <span>Chia sẻ có lời</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bao-hiem-so/hop-dong?source_screen=my_account">
+                            <img class="icon"
+                                 alt="insurance icon"
+                                 src="https://frontend.tikicdn.com/_desktop-next/static/img/account/insurance.png"/>
+                            <span>Hợp đồng bảo hiểm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/mua-truoc-tra-sau/dang-ky">
+                            <img class="icon"
+                                 src="https://salt.tikicdn.com/ts/tmp/95/15/2d/4b3d64b220f55f42885c86ac439d6d62.png"/>
+                            <span>Mua trước trả sau</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </aside>
+        </div>
+        <div class="col-9 ">
+            <form>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 bg-white rounded-2 mb-3 ">
+                            <div class="form-create p-2">
+                                <div class="form-create__title fw-bold my-3">
+                                    <p>Đơn ký gửi</p>
+                                </div>
+                                <div class="form-create__body">
+                                    <div class="mb-3">
+                                        <label for="storage" class="form-label">Kho nhận
+                                            hàng</label>
+                                        <select id="storage" class="form-select">
+                                            <option>Quảng châu</option>
+                                            <option selected>Chọn kho nhận hàng</option>
+                                        </select>
+                                        <div class="form-text text-danger">Kho nhận hàng là bắt buộc
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="storage__customer" class="form-label">Kho nhận
+                                            hàng</label>
+                                        <select id="storage__customer" class="form-select">
+                                            <option>Hà Nội- Mỹ Đình</option>
+                                            <option>Hà Nội- Hoàng Mai</option>
+                                            <option>Sài gòn - bình thạnh</option>
+                                            <option selected>Chọn kho nhận hàng</option>
+                                        </select>
+                                        <div class="form-text text-danger">Kho nhận hàng là bắt buộc
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="type" class="form-label">Loại hàng</label>
+                                        <select id="type" class="form-select">
+                                            <option selected>Thông thường</option>
+                                            <option>Thương hiệu</option>
+                                            <option>Chịu thuế</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="type" class="form-label">Ghi chú khách
+                                            hàng</label>
+                                        <textarea class="form-control" cols="10"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="type" class="form-label">Ghi chú cho kho</label>
+                                        <textarea class="form-control" cols="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 bg-white rounded-2 mb-3 ">
+                            <div class="form-create create-address p-2">
+                                <div class="form-create__title d-flex align-items-center justify-content-between py-3 ">
+                                    <p class="mb-0 fw-bold">Địa chỉ giao hàng</p>
+                                    <div data-bs-toggle="modal" data-bs-target="#add-address"
+                                         style="cursor: pointer">
+                                        <i class="ri-add-box-line"></i>
+                                    </div>
+                                </div>
+                                <div class="item d-flex mt-4 mb-3">
+                                    <div class="align-self-lg-stretch me-5">
+                                        <input type="checkbox">
+                                    </div>
+                                    <div class="address-content  ms-3">
+                                        <p>Duc</p>
+                                        <p>0935973326</p>
+                                        <p>1041 tran xuan soan, quan 7, Ho Chi Minh</p>
+                                    </div>
+                                    <div class="edit" data-bs-toggle="modal"
+                                         data-bs-target="#add-address" style="cursor: pointer">
+                                        <i class="ri-edit-box-line" class="mr-2"></i>
+                                        Sửa
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 bg-white rounded-2 mb-3 ">
+                            <div class="form-create p-2">
+                                <div class="form-create__title fw-bold my-4 ">
+                                    <p class="mb-0">Danh sách mã vận đơn</p>
+                                </div>
+                                <div class="">
+                                    <table class="table table-bordered  table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col-1" class="text-center">Stt</th>
+                                            <th scope="col-2" class="text-center">Mã vận đơn</th>
+                                            <th scope="col-2" class="text-center">Danh mục/ghi chú
+                                            </th>
+                                            <th scope="col-5" class="text-center">Ghi chú</th>
+                                            <th scope="col-1" class="text-center">Số lượng kiện</th>
+                                            <th scope="col"
+                                                class="d-flex align-items-center justify-content-center">
+                                                <div class="add-row">
+                                                    <i class="ri-add-line"></i>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="body-code">
+                                        <tr data-row="1">
+                                            <td class="col-1 text-center">1</td>
+                                            <td class="col-2">
+                                                <div>
+                                                    <input class="form-control" type="text"/>
+                                                </div>
+                                            </td>
+                                            <td class="col-3">
+                                                <div>
+                                                    <select class="form-select form-select-lg mb-3"
+                                                            aria-label="Large select example">
+                                                        <option selected>Default
+                                                        </option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <textarea class="form-control"
+                                                              placeholder="ghi chú"> </textarea>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <input class="form-control" type="number"
+                                                           style="appearance: none"/>
+                                                </div>
+                                            </td>
+                                            <td data-row="1">
+                                                <div class="minus-row" data-row="1">
+                                                    <i class="ri-subtract-line" data-row="1"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-row="2">
+                                            <td class="col-1 text-center">2</td>
+                                            <td class="col-2">
+                                                <div>
+                                                    <input class="form-control" type="text"/>
+                                                </div>
+                                            </td>
+                                            <td class="col-3">
+                                                <div>
+                                                    <select class="form-select form-select-lg mb-3"
+                                                            aria-label="Large select example">
+                                                        <option selected>Default
+                                                        </option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <textarea class="form-control"
+                                                              placeholder="ghi chú"> </textarea>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <input class="form-control" type="number"
+                                                           style="appearance: none"/>
+                                                </div>
+                                            </td>
+                                            <td data-row="2">
+                                                <div class="minus-row" data-row="2">
+                                                    <i class="ri-subtract-line" data-row="2"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <button type="submit" class="btn btn-primary me-3">
+                                    <i class="ri-add-line"></i>
+                                    Tạo đơn ký gửi
+                                </button>
+                                <button type="button" class="btn btn-danger">
+                                    <i class="ri-close-line"></i>
+                                    Đóng lại
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item h-100">
-                    <img
-                            src="https://images.unsplash.com/25/peak.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            class="d-block w-100 h-100 object-fit-cover"
-                            alt="..."
-                    />
-                </div>
-            </div>
-            <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExample"
-                    data-bs-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExample"
-                    data-bs-slide="next"
-            >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            </form>
+
         </div>
     </div>
 </div>
@@ -779,7 +1078,80 @@
         </div>
     </div>
 </div>
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="add-address" tabindex="-1" aria-labelledby="create-address"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="create-address">Thông tin giao hàng</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label ">Họ và tên <span
+                                class="text-danger">(*)</span></label>
+                        <input type="text" required class="form-control" id="username"
+                               aria-describedby="username">
+                        <div class="form-text text-danger">Họ và tên là bắt buộc.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label ">Số điện thoại <span
+                                class="text-danger">(*)</span></label>
+                        <input type="text" required class="form-control" id="phone"
+                               aria-describedby="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label ">Địa chỉ<span class="text-danger">(*)</span></label>
+                        <input type="text" required class="form-control" id="address"
+                               aria-describedby="address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="note" class="form-label ">Ghi chú</label>
+                        <input type="text" required class="form-control" id="note"
+                               aria-describedby="note">
+                    </div>
+                    <div class="mb-3 d-flex align-items-center justify-content-center">
+                        <div class="w-50 me-3">
+                            <label for="city" class="form-label ">Tỉnh/Thành phố <span
+                                    class="text-danger">(*)</span></label>
+                            <select class="form-select" id="city"
+                                    aria-label="Default select example">
+                                <option selected>Thành phố</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                            </select>
+                        </div>
+                        <div class="w-50">
+                            <label for="area" class="form-label ">Quận/Huyện<span
+                                    class="text-danger">(*)</span></label>
+                            <select class="form-select" id="area"
+                                    aria-label="Default select example">
+                                <option selected>Quận huyện</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy
+                </button>
+                <button type="button" class="btn btn-primary">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- end modal login -->
 <script src="../lib/ui/js/bootstrap.js"></script>
+<script src="../js/create-form.js"></script>
+
 </body>
 </html>

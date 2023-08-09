@@ -1,0 +1,37 @@
+.create-address .form-create__title {
+    border-bottom: 1px solid #e1e1e1;
+}
+.create-address .address-content {
+    flex:1;
+}
+.create-address .address-content p{
+    font-size: 13px;
+    margin-bottom: 8px;
+    line-height: 15px;
+}
+.create-address  .item {
+    border-bottom: 1px solid #e1e1e1;
+}
+.add-row, .minus-row {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.add-row{
+    background-color: #2cccff ;
+}
+.add-row i {
+    font-size: 15px;
+    color: #ffffff;
+}
+.minus-row i{
+    font-size: 15px;
+    color: #ffffff;
+}
+.form-create__title p{
+    font-size: 20px;
+}
