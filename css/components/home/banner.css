@@ -1,3 +1,148 @@
 .my-banner {
-  height: var(--height-banner);
+    height: var(--height-banner);
+}
+
+.single-services-box {
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, .05);
+    margin-bottom: 30px;
+    transition: all ease .5s;
+}
+
+.single-services-box img {
+    margin-bottom: 15px;
+}
+
+.single-services-box h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #000024;
+    font-weight: 700;
+}
+
+.single-services-box p {
+    font-size: 16px;
+    margin-bottom: 15px;
+
+    line-height: 1.8;
+}
+
+.service {
+    background-color: #F9FAFB;
+}
+
+.value .value__subtitle {
+    color: #1d86c1;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.value .value__title {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.value__side-item {
+    width: 192px;
+    background-color: #fff7ea;
+    padding: 20px;
+}
+
+.value__side-item .icon i {
+    font-size: 50px;
+    color: #1D86C6;
+}
+
+.value__side-item p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.value .swiper-pagination {
+    top: 100%;
+}
+
+.value .swiper {
+    overflow-y: visible;
+}
+
+.value .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: #ffffff;
+    border: 1px solid #1D86C6;
+    position: relative;
+}
+
+.value .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #1D86C6;
+    border-radius: 100%;
+    content: "";
+    width: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.ship {
+    min-height: 450px;
+    background-image: url(../../../static/image/page-bg-2.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+}
+.ship:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+    z-index: -1;
+}
+
+.ship .ship__subtitle {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #1D86C6;
+    display: block;
+    margin: 20px;
+}
+
+.ship h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 20px;
+}
+.ship p{
+    text-align: center;
+    font-size: 16px ;
+    line-height: 26px;
+    color: #ffffff;
+}
+.ship button {
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #1D86C6;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    transition: .3s linear ease-in-out;
+    margin-top: 20px;
+}
+.ship button:hover {
+    background-color: #0a58ca;;
 }
