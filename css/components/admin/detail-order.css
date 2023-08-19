@@ -309,3 +309,13 @@ a {
 .ukdFc .content .notifications__item .comment {
     text-align: left;
 }
+
+@media screen and (max-width: 765px) {
+    .cRRvpz {
+        flex-direction: column;
+    }
+   .cRRvpz > div {
+       width: unset;
+       margin-bottom: 20px;
+   }
+}

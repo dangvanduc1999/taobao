@@ -10,7 +10,7 @@
     height: 3.5vw;
     overflow: hidden;
 }
-.small-text {
+.article-banner .small-text {
     font-size: 22px;
     color:#49B288;
 }
@@ -22,4 +22,29 @@
 }
 .article-item:hover{
     background: rgba(204, 204, 204, 0.23);
+}
+
+@media screen and (max-width: 750px) {
+    .article-item__des h3 {
+        font-size: 16px;
+        height: unset;
+    }
+    .article-banner  .small-text{
+        font-size: 16px;
+    }
+    .sub-text p {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+    .article-item__des h3 {
+        font-size: 20px;
+        height: 5.5vw;
+    }
+    .article-banner  .small-text{
+        font-size: 20px;
+    }
+    .sub-text p {
+        font-size: 14px;
+    }
 }

@@ -4,7 +4,8 @@ const $all = document.querySelectorAll.bind(document);
 function handleGetCurrentRow () {
     return $all('tr[data-row')
 }
-function addMinus() {
+
+function addMinus () {
     const listBtnMinusRow = $all(".minus-row")
     if (!listBtnMinusRow.length < 0) {
         return
@@ -24,7 +25,7 @@ const bodyCodeEle = $("#body-code");
 
 btnAddCodeEle.addEventListener('click', function (e) {
     const currentRow = handleGetCurrentRow();
-    const newRow = document.createElement('tr', )
+    const newRow = document.createElement('tr',)
     if (!currentRow || (currentRow && currentRow.length === 0)) {
         newRow.setAttribute("data-row", 1)
         newRow.innerHTML = ` <td class="col-1 text-center">1</td>
@@ -66,7 +67,7 @@ btnAddCodeEle.addEventListener('click', function (e) {
         addMinus()
         return;
     }
-    newRow.setAttribute("data-row", currentRow.length +1)
+    newRow.setAttribute("data-row", currentRow.length + 1)
     newRow.innerHTML = `  <td class="col-1 text-center">${currentRow.length + 1}</td>
                                             <td class="col-2">
                                                 <div>

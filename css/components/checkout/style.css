@@ -728,3 +728,21 @@
   color: rgb(128, 128, 137);
   margin: 0px;
 }
+@media screen and (max-width: 760px) {
+  .package-summary{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-content {
+    margin-right: 0;
+    width: 100%;
+  }
+  .eEHLZh{
+    width: 100%;
+  }
+  .eydcWx .method-content__title > span {
+    margin-right: 12px;
+    white-space: pre-line;
+  }
+}
