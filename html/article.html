@@ -27,59 +27,69 @@
     <div class="container main-header">
         <div class="row">
             <div class="col-12">
-                <header class="d-flex align-items-center p-4">
-                    <a class="my-logo d-block me-5" href="home.html">
+                <header class="d-flex align-items-center p-4 pb-2 pt-3">
+                    <a class="my-logo d-block me-2" href="home.html">
                         <img
                             src="../static/image/270be9859abd5f5ec5071da65fab0a94.png"
                             alt="logo"
                             class="object-fit-contain w-100 h-100"
                         />
                     </a>
-                    <div class="me-5 flex-grow-1  d-none d-lg-block" style="flex: 1">
-                        <ul class="nav nav-tabs border-bottom-0 d-flex justify-content-center">
-                            <li class="nav-item active">
-                                <a class="nav-link active" aria-current="page" href="#"
-                                >Tao bao</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">1988</a>
-                            </li>
-                        </ul>
-                        <div class="input-group me-5 flex-grow-1" style="flex: 1">
-                            <span class="input-group-text">
-                                <i class="ri-search-line"></i>
-                            </span>
-                            <input
-                                type="text"
-                                id="search-bar"
-                                class="form-control"
-                                placeholder="Bạn tìm gì hôm nay"
-                                aria-label="Recipient's username"
-                                aria-describedby="button-addon2"
-                            />
-                            <a href="product-listing.html"
-                               class="btn btn-outline-secondary"
-                               type="button"
-                               id="button-addon2"
-                            >
-                                Tìm kiếm
-                            </a>
-                        </div>
+                    <!-- has active when matching route class "active"-->
+                    <div class="ms-auto d-flex">
+                        <a
+                            class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+                            href="create-form.html"
+                            role="button"
+                        >
+                            <i class="ri-home-5-line"></i>
+                            <span class="d-inline-block ms-1">Trang chủ</span>
+                        </a>
+                        <a
+                            class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+                            href="create-form.html"
+                            role="button"
+                        >
+                            <i class="ri-product-hunt-line"></i>
+                            <span class="d-inline-block ms-1">Sản phẩm</span>
+                        </a>
+                        <a
+                            class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+                            href="create-form.html"
+                            role="button"
+                        >
+                            <i class="ri-stack-line"></i>
+                            <span class="d-inline-block ms-1">Chính sách</span>
+                        </a>
+                        <a
+                            class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+                            href="create-form.html"
+                            role="button"
+                        >
+                            <i class="ri-customer-service-2-fill"></i>
+                            <span class="d-inline-block ms-1">Về chúng tôi</span>
+                        </a>
+                        <a
+                            class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+                            href="create-form.html"
+                            role="button"
+                        >
+                            <i class="ri-space-ship-line"></i>
+                            <span class="d-inline-block ms-1">Vận chuyển</span>
+                        </a>
+                        <a
+                            class="btn d-block d-flex align-items-center my-btn  d-none d-lg-block"
+                            href="create-form.html"
+                            role="button"
+                        >
+                            <i class="ri-bank-card-2-line"></i>
+                            <span class="d-inline-block ms-1">Thanh toán</span>
+                        </a>
                     </div>
 
                     <!-- has active when matching route class "active"-->
-                    <a
-                        class="btn me-3 d-block d-flex align-items-center my-btn  d-none d-lg-block"
-                        href="create-form.html"
-                        role="button"
-                    >
-                        <i class="ri-home-5-line"></i>
-                        <span class="d-inline-block ms-1">Trang chủ</span>
-                    </a>
-                    <!-- has active when matching route class "active"-->
 
-                    <div class="dropdown me-2  d-none d-lg-block">
+                    <div class="dropdown  me-2  d-none d-lg-block">
                         <button
                             class="btn dropdown-toggle d-block d-flex align-items-center my-btn border-0"
                             type="button"
@@ -171,12 +181,13 @@
 
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed mobile-collapsed-btn"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseOne"
-                                                    aria-expanded="false"
-                                                    aria-controls="flush-collapseOne">
+                                            <button
+                                                class="accordion-button collapsed mobile-collapsed-btn"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
                                                  <span
                                                      class="d-block bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-1 logo-avatar">
                             Đ
@@ -206,15 +217,23 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header ">
-                                            <a href="cart.html" class="accordion-button text-decoration-none collapsed mobile-collapsed-btn" type="button">
-                                                <i class="ri-shopping-cart-line" style="font-size: 25px; margin-right: 10px" ></i> Giỏ hàng
+                                            <a href="cart.html"
+                                               class="accordion-button text-decoration-none collapsed mobile-collapsed-btn"
+                                               type="button">
+                                                <i class="ri-shopping-cart-line"
+                                                   style="font-size: 25px; margin-right: 10px"></i>
+                                                Giỏ hàng
                                             </a>
                                         </h2>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header ">
-                                            <a href="home.html" class="accordion-button text-decoration-none collapsed mobile-collapsed-btn" type="button">
-                                                <i class="ri-home-5-line" style="font-size: 25px; margin-right: 10px"></i> Trang chủ
+                                            <a href="home.html"
+                                               class="accordion-button text-decoration-none collapsed mobile-collapsed-btn"
+                                               type="button">
+                                                <i class="ri-home-5-line"
+                                                   style="font-size: 25px; margin-right: 10px"></i>
+                                                Trang chủ
                                             </a>
                                         </h2>
                                     </div>
@@ -223,6 +242,40 @@
                         </div>
                     </div>
                 </header>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-4">
+            <div class="col-8  flex justify-content-center">
+                <div class="me-5 flex-grow-1  d-none d-lg-block" style="flex: 1">
+                    <ul class="nav nav-tabs border-bottom-0 d-flex justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link active" aria-current="page" href="#">Tao bao</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">1988</a>
+                        </li>
+                    </ul>
+                    <div class="input-group me-5 flex-grow-1" style="flex: 1">
+                            <span class="input-group-text">
+                                <i class="ri-search-line"></i>
+                            </span>
+                        <input
+                            type="text"
+                            id="search-bar"
+                            class="form-control"
+                            placeholder="Bạn tìm gì hôm nay"
+                            aria-label="Recipient's username"
+                            aria-describedby="button-addon2"
+                        />
+                        <a href="product-listing.html"
+                           class="btn btn-outline-secondary"
+                           type="button"
+                           id="button-addon2"
+                        >
+                            Tìm kiếm
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -956,6 +1009,7 @@
     </div>
 </div>
 <!-- end modal login -->
+<script src="../lib/popper/index.js"></script>
 <script src="../lib/ui/js/bootstrap.js"></script>
 </body>
 </html>
