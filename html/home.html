@@ -1,574 +1,677 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home Tao bao</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-    />
-    <link
-        rel="stylesheet"
-        href="../lib/icon/RemixIcon_Fonts_v3.5.0/fonts/remixicon.css"
-    />
-    <link rel="stylesheet" href="../lib/ui/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../lib/ui/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../lib/swipper/swipper.css"/>
-    <link rel="stylesheet" href="../css/global.css"/>
-    <link rel="stylesheet" href="../css/components/header.css"/>
-    <link rel="stylesheet" href="../css/components/footer.css"/>
-    <link rel="stylesheet" href="../css/components/home/banner.css"/>
-    <link rel="stylesheet" href="../css/components/modal-login.css"/>
+	<title>Home Tao bao</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet"
+	/>
+	<link
+		rel="stylesheet"
+		href="../lib/icon/RemixIcon_Fonts_v3.5.0/fonts/remixicon.css"
+	/>
+	<link rel="stylesheet" href="../lib/ui/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../lib/ui/css/bootstrap.css"/>
+	<link rel="stylesheet" href="../lib/swipper/swipper.css"/>
+	<link rel="stylesheet" href="../css/global.css"/>
+	<link rel="stylesheet" href="../css/components/header.css"/>
+	<link rel="stylesheet" href="../css/components/footer.css"/>
+	<link rel="stylesheet" href="../css/components/home/banner.css"/>
+	<link rel="stylesheet" href="../css/components/modal-login.css"/>
 </head>
 <body>
 <!-- header -->
 <div class="bg-white">
-    <div class="container main-header">
-        <div class="row">
-            <div class="col-12">
-                <header class="d-flex align-items-center p-4">
-                    <a class="my-logo d-block me-5" href="home.html">
-                        <img
-                            src="../static/image/270be9859abd5f5ec5071da65fab0a94.png"
-                            alt="logo"
-                            class="object-fit-contain w-100 h-100"
-                        />
-                    </a>
-                    <div class="me-5 flex-grow-1  d-none d-lg-block" style="flex: 1">
-                        <ul class="nav nav-tabs border-bottom-0 d-flex justify-content-center">
-                            <li class="nav-item active">
-                                <a class="nav-link active" aria-current="page" href="#"
-                                >Tao bao</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">1988</a>
-                            </li>
-                        </ul>
-                        <div class="input-group me-5 flex-grow-1" style="flex: 1">
-                            <span class="input-group-text">
-                                <i class="ri-search-line"></i>
-                            </span>
-                            <input
-                                type="text"
-                                id="search-bar"
-                                class="form-control"
-                                placeholder="Bạn tìm gì hôm nay"
-                                aria-label="Recipient's username"
-                                aria-describedby="button-addon2"
-                            />
-                            <a href="product-listing.html"
-                               class="btn btn-outline-secondary"
-                               type="button"
-                               id="button-addon2"
-                            >
-                                Tìm kiếm
-                            </a>
-                        </div>
-                    </div>
+	<div class="container main-header">
+		<div class="row">
+			<div class="col-12">
+				<header class="d-flex align-items-center p-4 pb-2 pt-3">
+					<a class="my-logo d-block me-2" href="home.html">
+						<img
+							src="../static/image/270be9859abd5f5ec5071da65fab0a94.png"
+							alt="logo"
+							class="object-fit-contain w-100 h-100"
+						/>
+					</a>
 
-                    <!-- has active when matching route class "active"-->
-                    <a
-                        class="btn me-3 d-block d-flex align-items-center my-btn  d-none d-lg-block"
-                        href="create-form.html"
-                        role="button"
-                    >
-                        <i class="ri-home-5-line"></i>
-                        <span class="d-inline-block ms-1">Trang chủ</span>
-                    </a>
-                    <!-- has active when matching route class "active"-->
+					<!-- has active when matching route class "active"-->
+					<div class="ms-auto d-flex">
+						<a
+							class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+							href="create-form.html"
+							role="button"
+						>
+							<i class="ri-home-5-line"></i>
+							<span class="d-inline-block ms-1">Trang chủ</span>
+						</a>
+						<a
+							class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+							href="create-form.html"
+							role="button"
+						>
+							<i class="ri-product-hunt-line"></i>
+							<span class="d-inline-block ms-1">Sản phẩm</span>
+						</a>
+						<a
+							class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+							href="create-form.html"
+							role="button"
+						>
+							<i class="ri-stack-line"></i>
+							<span class="d-inline-block ms-1">Chính sách</span>
+						</a>
+						<a
+							class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+							href="create-form.html"
+							role="button"
+						>
+							<i class="ri-customer-service-2-fill"></i>
+							<span class="d-inline-block ms-1">Về chúng tôi</span>
+						</a>
+						<a
+							class="btn me-2 d-block d-flex align-items-center my-btn  d-none d-lg-block"
+							href="create-form.html"
+							role="button"
+						>
+							<i class="ri-space-ship-line"></i>
+							<span class="d-inline-block ms-1">Vận chuyển</span>
+						</a>
+						<a
+							class="btn d-block d-flex align-items-center my-btn  d-none d-lg-block"
+							href="create-form.html"
+							role="button"
+						>
+							<i class="ri-bank-card-2-line"></i>
+							<span class="d-inline-block ms-1">Thanh toán</span>
+						</a>
+					</div>
+					<button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">modalSuccessfull</button>
 
-                    <div class="dropdown me-2  d-none d-lg-block">
-                        <button
-                            class="btn dropdown-toggle d-block d-flex align-items-center my-btn border-0"
-                            type="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                        >
+					<!-- has active when matching route class "active"-->
+
+					<div class="dropdown  me-2  d-none d-lg-block">
+						<button
+							class="btn dropdown-toggle d-block d-flex align-items-center my-btn border-0"
+							type="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
                              <span
-                                 class="d-block bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-1 logo-avatar">
+	                             class="d-block bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-1 logo-avatar">
                             Đ
                              </span>
-                            Tài Khoản
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#">Thông tin tài khoản</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Đơn hàng của tôi</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
-                        </ul>
-                    </div>
-                    <div class="my-divider d-none d-lg-block me-3"></div>
-                    <a
-                        class="btn position-relative d-none d-lg-block active d-flex align-items-center my-btn border-0  d-none d-lg-block"
-                        href="cart.html"
-                        role="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#login-modal"
-                    >
-                        <i class="ri-shopping-cart-line" style="font-size: 25px"></i>
-                        <span
-                            class="position-absolute top-10 start-100 translate-middle bg-danger border border-light rounded-circle text-white"
-                            style="font-size: 12px; padding: 3px 5px"
-                        >
+							Tài Khoản
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item" href="#">Thông tin tài khoản</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Đơn hàng của tôi</a>
+							</li>
+							<li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+						</ul>
+					</div>
+					<div class="my-divider d-none d-lg-block me-3"></div>
+					<a
+						class="btn position-relative d-none d-lg-block active d-flex align-items-center my-btn border-0  d-none d-lg-block"
+						href="cart.html"
+						role="button"
+						data-bs-toggle="modal"
+						data-bs-target="#login-modal"
+					>
+						<i class="ri-shopping-cart-line" style="font-size: 25px"></i>
+						<span
+							class="position-absolute top-10 start-100 translate-middle bg-danger border border-light rounded-circle text-white"
+							style="font-size: 12px; padding: 3px 5px"
+						>
                   99
                   <span class="visually-hidden">unread messages</span>
                 </span>
-                    </a>
-                    <button class="btn btn-primary ms-auto d-block d-sm-block d-md-block d-lg-none"
-                            type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <i class="ri-bar-chart-horizontal-fill"></i>
-                    </button>
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                         aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-                            <button type="button" class="btn-close text-reset"
-                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                <div class="" style="flex: 1">
-                                    <ul class="nav nav-tabs border-bottom-0 d-flex justify-content-center">
-                                        <li class="nav-item active">
-                                            <a class="nav-link active" aria-current="page" href="#"
-                                            >Tao bao</a
-                                            >
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" href="#">1988</a>
-                                        </li>
-                                    </ul>
-                                    <div class="input-group me-5 flex-grow-1" style="flex: 1">
+					</a>
+					<button class="btn btn-primary ms-auto d-block d-sm-block d-md-block d-lg-none"
+					        type="button" data-bs-toggle="offcanvas"
+					        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+						<i class="ri-bar-chart-horizontal-fill"></i>
+					</button>
+					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+					     aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+							<button type="button" class="btn-close text-reset"
+							        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<div>
+								<div class="" style="flex: 1">
+									<ul class="nav nav-tabs border-bottom-0 d-flex justify-content-center">
+										<li class="nav-item active">
+											<a class="nav-link active" aria-current="page" href="#"
+											>Tao bao</a
+											>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link active" href="#">1988</a>
+										</li>
+									</ul>
+									<div class="input-group me-5 flex-grow-1" style="flex: 1">
                                         <span class="input-group-text">
                                                 <i class="ri-search-line"></i>
                                         </span>
-                                        <input
-                                            type="text"
-                                            id="search-bar-mobile"
-                                            class="form-control"
-                                            placeholder="Bạn tìm gì hôm nay"
-                                            aria-label="Recipient's username"
-                                            aria-describedby="button-addon2"
-                                        />
-                                        <a href="product-listing.html"
-                                           class="btn btn-outline-secondary"
-                                           type="button"
-                                           id="button-addon3"
-                                        >
-                                            Tìm kiếm
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-3">
-                                <div class="accordion " id="accordionExample">
+										<input
+											type="text"
+											id="search-bar-mobile"
+											class="form-control"
+											placeholder="Bạn tìm gì hôm nay"
+											aria-label="Recipient's username"
+											aria-describedby="button-addon2"
+										/>
+										<a href="product-listing.html"
+										   class="btn btn-outline-secondary"
+										   type="button"
+										   id="button-addon3"
+										>
+											Tìm kiếm
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="mt-3">
+								<div class="accordion " id="accordionExample">
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed mobile-collapsed-btn"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseOne"
-                                                    aria-expanded="false"
-                                                    aria-controls="flush-collapseOne">
+									<div class="accordion-item">
+										<h2 class="accordion-header">
+											<button
+												class="accordion-button collapsed mobile-collapsed-btn"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseOne"
+												aria-expanded="false"
+												aria-controls="flush-collapseOne">
                                                  <span
-                                                     class="d-block bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-1 logo-avatar">
+	                                                 class="d-block bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-1 logo-avatar">
                             Đ
                              </span>
-                                                Tài khoản
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne"
-                                             class="accordion-collapse"
-                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item"><a
-                                                        class="dropdown-item" href="#">Thông tin tài
-                                                        khoản</a></li>
-                                                    <li class="list-group-item"><a
-                                                        class="dropdown-item" href="#">Đơn hàng của
-                                                        tôi</a></li>
-                                                    <li class="list-group-item"><a
-                                                        class="dropdown-item" href="#">Đăng xuất</a>
-                                                    </li>
+												Tài khoản
+											</button>
+										</h2>
+										<div id="flush-collapseOne"
+										     class="accordion-collapse"
+										     data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<ul class="list-group">
+													<li class="list-group-item"><a
+														class="dropdown-item" href="#">Thông tin tài
+														khoản</a></li>
+													<li class="list-group-item"><a
+														class="dropdown-item" href="#">Đơn hàng của
+														tôi</a></li>
+													<li class="list-group-item"><a
+														class="dropdown-item" href="#">Đăng xuất</a>
+													</li>
 
-                                                </ul>
+												</ul>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header ">
-                                            <a href="cart.html" class="accordion-button text-decoration-none collapsed mobile-collapsed-btn" type="button">
-                                                <i class="ri-shopping-cart-line" style="font-size: 25px; margin-right: 10px" ></i> Giỏ hàng
-                                            </a>
-                                        </h2>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header ">
-                                            <a href="home.html" class="accordion-button text-decoration-none collapsed mobile-collapsed-btn" type="button">
-                                                <i class="ri-home-5-line" style="font-size: 25px; margin-right: 10px"></i> Trang chủ
-                                            </a>
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-            </div>
-        </div>
-    </div>
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header ">
+											<a href="cart.html"
+											   class="accordion-button text-decoration-none collapsed mobile-collapsed-btn"
+											   type="button">
+												<i class="ri-shopping-cart-line"
+												   style="font-size: 25px; margin-right: 10px"></i>
+												Giỏ hàng
+											</a>
+										</h2>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header ">
+											<a href="home.html"
+											   class="accordion-button text-decoration-none collapsed mobile-collapsed-btn"
+											   type="button">
+												<i class="ri-home-5-line"
+												   style="font-size: 25px; margin-right: 10px"></i>
+												Trang chủ
+											</a>
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+			</div>
+		</div>
+		<div class="row justify-content-center pb-4">
+			<div class="col-8  flex justify-content-center">
+				<div class="me-5 flex-grow-1  d-none d-lg-block" style="flex: 1">
+					<ul class="nav nav-tabs border-bottom-0 d-flex justify-content-center">
+						<li class="nav-item active">
+							<a class="nav-link active" aria-current="page" href="#">Tao bao</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">1988</a>
+						</li>
+					</ul>
+					<div class="input-group me-5 flex-grow-1" style="flex: 1">
+                            <span class="input-group-text">
+                                <i class="ri-search-line"></i>
+                            </span>
+						<input
+							type="text"
+							id="search-bar"
+							class="form-control"
+							placeholder="Bạn tìm gì hôm nay"
+							aria-label="Recipient's username"
+							aria-describedby="button-addon2"
+						/>
+						<a href="product-listing.html"
+						   class="btn btn-outline-secondary"
+						   type="button"
+						   id="button-addon2"
+						>
+							Tìm kiếm
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="my-banner">
-    <div id="carouselExample" class="carousel h-100 slide">
-        <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100">
-                <img
-                    src="https://plus.unsplash.com/premium_photo-1671211754320-08fd8bfc26aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                    class="d-block w-100 h-100 object-fit-cover"
-                    alt="..."
-                />
-            </div>
-            <div class="carousel-item h-100">
-                <img
-                    src="https://images.unsplash.com/photo-1486072889922-9aea1fc0a34d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                    class="d-block w-100 h-100 object-fit-cover"
-                    alt="..."
-                />
-            </div>
-            <div class="carousel-item h-100">
-                <img
-                    src="https://images.unsplash.com/25/peak.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                    class="d-block w-100 h-100 object-fit-cover"
-                    alt="..."
-                />
-            </div>
-        </div>
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+	<div id="carouselExample" class="carousel h-100 slide">
+		<div class="carousel-inner h-100">
+			<div class="carousel-item active h-100 position-relative">
+				<img
+					src="https://plus.unsplash.com/premium_photo-1671211754320-08fd8bfc26aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+					class="d-block w-100 h-100 object-fit-cover"
+					alt="..."
+				/>
+				<div class="container position-absolute top-0 start-50 translate-middle-x w-100 h-100">
+					<div class="row h-100">
+						<div class="col-8 h-100 ps-5 align-items-center d-flex">
+							<div class="w-100 ps-5 banner-des">
+								<h3 class="text-white animated-text">Đây là Tittle của banner</h3>
+								<p class="text-white mb-1 animated-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab est eum iusto
+									nesciunt quis reprehenderit, sequi voluptates. Dolor dolores esse, exercitationem
+									impedit nulla optio sapiente sint tempore veritatis voluptatem.
+								</p>
+								<button class="animated-text">Xem chính sách & điều khoản</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item h-100">
+				<img
+					src="https://images.unsplash.com/photo-1486072889922-9aea1fc0a34d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+					class="d-block w-100 h-100 object-fit-cover"
+					alt="..."
+				/>
+				<div class="container position-absolute top-0 start-50 translate-middle-x w-100 h-100">
+					<div class="row h-100">
+						<div class="col-8 h-100 ps-5 align-items-center d-flex">
+							<div class="w-100 ps-5 banner-des">
+								<h3 class="text-white animated-text ">Đây là Tittle của banner</h3>
+								<p class="text-white mb-1 animated-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab est eum iusto
+									nesciunt quis reprehenderit, sequi voluptates. Dolor dolores esse, exercitationem
+									impedit nulla optio sapiente sint tempore veritatis voluptatem.
+								</p>
+								<button class="animated-text">Xem chính sách & điều khoản</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item h-100">
+				<img
+					src="https://images.unsplash.com/25/peak.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+					class="d-block w-100 h-100 object-fit-cover"
+					alt="..."
+				/>
+				<div class="container position-absolute top-0 start-50 translate-middle-x w-100 h-100">
+					<div class="row h-100">
+						<div class="col-8 h-100 ps-5 align-items-center d-flex">
+							<div class="w-100 ps-5 banner-des">
+								<h3 class="text-white animated-text ">Đây là Tittle của banner</h3>
+								<p class="text-white mb-1 animated-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab est eum iusto
+									nesciunt quis reprehenderit, sequi voluptates. Dolor dolores esse, exercitationem
+									impedit nulla optio sapiente sint tempore veritatis voluptatem.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam at, dolore enim
+									eos et expedita, hic inventore iure maxime molestiae mollitia neque nihil obcaecati
+									quam quidem quisquam reiciendis similique.
+								</p>
+								<button class="animated-text">Xem chính sách & điều khoản</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button
+			class="carousel-control-prev"
+			type="button"
+			data-bs-target="#carouselExample"
+			data-bs-slide="prev"
+		>
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button
+			class="carousel-control-next"
+			type="button"
+			data-bs-target="#carouselExample"
+			data-bs-slide="next"
+		>
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
 </div>
 </div>
 <section class="service py-5">
-    <div class="container">
-        <div class="row mb-4">
-            <div
-                class="col-lg-12 col-md-12 col-12 d-flex flex-column align-items-center text-center justify-content-center">
-                <p class="sub-title  ">
-                    Dịch vụ từ chúng tôi
-                </p>
-                <h1 class="main-title text-black text-uppercase fw-bold">
-                    chúng tôi giải quyết vấn đề <br/> của bạn
-                </h1>
-                <p class="des">
-                    Với các dịch vụ Order hàng, Chuyển hàng ký gửi, Chuyển tiền...
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <div class="single-services-box">
-                    <img src="../static/image/order-hang.png" alt="Đặt hàng taobao"
-                         class="img-fluid">
-                    <h3>Đặt Hàng</h3>
-                    <p>HỖ trợ đặt hàng trên tất cả các website TMĐT Trung Quốc như: Taobao, 1688,
-                        Tmall, Alibaba</p>
-                    <a href="#" class="read-more">
-                        Read More
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <div class="single-services-box">
-                    <img src="../static/image/order-hang.png" alt="Đặt hàng taobao"
-                         class="img-fluid">
-                    <h3>Đặt Hàng</h3>
-                    <p>HỖ trợ đặt hàng trên tất cả các website TMĐT Trung Quốc như: Taobao, 1688,
-                        Tmall, Alibaba</p>
-                    <a href="services-details.html" class="read-more">
-                        Read More
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <div class="single-services-box">
-                    <img src="../static/image/order-hang.png" alt="Đặt hàng taobao"
-                         class="img-fluid">
-                    <h3>Đặt Hàng</h3>
-                    <p>HỖ trợ đặt hàng trên tất cả các website TMĐT Trung Quốc như: Taobao, 1688,
-                        Tmall, Alibaba</p>
-                    <a href="services-details.html" class="read-more">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row mb-4">
+			<div
+				class="col-lg-12 col-md-12 col-12 d-flex flex-column align-items-center text-center justify-content-center">
+				<p class="sub-title  ">
+					Dịch vụ từ chúng tôi
+				</p>
+				<h1 class="main-title text-black text-uppercase fw-bold">
+					chúng tôi giải quyết vấn đề <br/> của bạn
+				</h1>
+				<p class="des">
+					Với các dịch vụ Order hàng, Chuyển hàng ký gửi, Chuyển tiền...
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+				<div class="single-services-box">
+					<img src="../static/image/order-hang.png" alt="Đặt hàng taobao"
+					     class="img-fluid">
+					<h3>Đặt Hàng</h3>
+					<p>HỖ trợ đặt hàng trên tất cả các website TMĐT Trung Quốc như: Taobao, 1688,
+						Tmall, Alibaba</p>
+					<a href="#" class="read-more">
+						Read More
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+				<div class="single-services-box">
+					<img src="../static/image/order-hang.png" alt="Đặt hàng taobao"
+					     class="img-fluid">
+					<h3>Đặt Hàng</h3>
+					<p>HỖ trợ đặt hàng trên tất cả các website TMĐT Trung Quốc như: Taobao, 1688,
+						Tmall, Alibaba</p>
+					<a href="services-details.html" class="read-more">
+						Read More
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+				<div class="single-services-box">
+					<img src="../static/image/order-hang.png" alt="Đặt hàng taobao"
+					     class="img-fluid">
+					<h3>Đặt Hàng</h3>
+					<p>HỖ trợ đặt hàng trên tất cả các website TMĐT Trung Quốc như: Taobao, 1688,
+						Tmall, Alibaba</p>
+					<a href="services-details.html" class="read-more">
+						Read More
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <section class="value bg-white py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-12 mb-5 mb-md-5 mb-lg-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-12 mb-5 mb-md-5 mb-lg-0">
                 <span class="value__subtitle d-block mb-2">
                     Vì sao chọn chúng tôi
                 </span>
-                <h1 class="value__title fw-bold text-black">giá trị cốt lõi của chúng tôi là <br/>
-                    sự uy tín</h1>
-                <p class="value__des">
-                    Tường Hưng Logistic luôn luôn cố gắng không ngừng nghỉ để mang lại cho bạn
-                    <span class="fw-bold fst-italic">dịch vụ nhập hàng taobao tốt nhất</span>,
-                    nhanh nhất, để làm hài lòng bạn khi sử dụng
-                    dịch vụ từ chúng tôi.
-                </p>
-                <div class="value__slide">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="value__side-item">
-                                    <div class="icon">
-                                        <i class="ri-customer-service-fill"></i>
-                                    </div>
-                                    <p>
-                                        Tư vấn nhiệt tình hỗ trợ giá tốt
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="value__side-item">
-                                    <div class="icon">
-                                        <i class="ri-customer-service-fill"></i>
-                                    </div>
-                                    <p>
-                                        Tư vấn nhiệt tình hỗ trợ giá tốt
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="value__side-item">
-                                    <div class="icon">
-                                        <i class="ri-customer-service-fill"></i>
-                                    </div>
-                                    <p>
-                                        Tư vấn nhiệt tình hỗ trợ giá tốt
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="value__side-item">
-                                    <div class="icon">
-                                        <i class="ri-customer-service-fill"></i>
-                                    </div>
-                                    <p>
-                                        Tư vấn nhiệt tình hỗ trợ giá tốt
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="value__side-item">
-                                    <div class="icon">
-                                        <i class="ri-customer-service-fill"></i>
-                                    </div>
-                                    <p>
-                                        Tư vấn nhiệt tình hỗ trợ giá tốt
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination">
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-12">
-                <div class="value__image">
-                    <img src="../static/image/choose-us-img.jpg"
-                         class="w-100 h-100 object-fit-cover" alt="logo">
-                </div>
-            </div>
-        </div>
-    </div>
+				<h1 class="value__title fw-bold text-black">giá trị cốt lõi của chúng tôi là <br/>
+					sự uy tín</h1>
+				<p class="value__des">
+					Tường Hưng Logistic luôn luôn cố gắng không ngừng nghỉ để mang lại cho bạn
+					<span class="fw-bold fst-italic">dịch vụ nhập hàng taobao tốt nhất</span>,
+					nhanh nhất, để làm hài lòng bạn khi sử dụng
+					dịch vụ từ chúng tôi.
+				</p>
+				<div class="value__slide">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="value__side-item">
+									<div class="icon">
+										<i class="ri-customer-service-fill"></i>
+									</div>
+									<p>
+										Tư vấn nhiệt tình hỗ trợ giá tốt
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="value__side-item">
+									<div class="icon">
+										<i class="ri-customer-service-fill"></i>
+									</div>
+									<p>
+										Tư vấn nhiệt tình hỗ trợ giá tốt
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="value__side-item">
+									<div class="icon">
+										<i class="ri-customer-service-fill"></i>
+									</div>
+									<p>
+										Tư vấn nhiệt tình hỗ trợ giá tốt
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="value__side-item">
+									<div class="icon">
+										<i class="ri-customer-service-fill"></i>
+									</div>
+									<p>
+										Tư vấn nhiệt tình hỗ trợ giá tốt
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="value__side-item">
+									<div class="icon">
+										<i class="ri-customer-service-fill"></i>
+									</div>
+									<p>
+										Tư vấn nhiệt tình hỗ trợ giá tốt
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination">
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-12">
+				<div class="value__image">
+					<img src="../static/image/choose-us-img.jpg"
+					     class="w-100 h-100 object-fit-cover" alt="logo">
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <section class="ship d-flex align-items-center flex-column justify-content-center">
-    <span class="ship__subtitle">chính sách</span>
-    <h1>Tường Hưng Logistic cam kết dịch vụ <br/> với Điều Khoản & Chính Sách rõ ràng</h1>
-    <p>Nhằm mang đến cho các bạn dịch vụ nhập hàng tốt nhất, chúng tôi luôn nỗ lực cải tiền <br/>
-        không
-        ngừng nhằm nâng cao chất lượng phục vụ , đem đến sự hài lòng cho các bạn sử dụng <br/> dịch
-        vụ của
-        chúng tôi! Mọi chính sách đều được chúng tôi cam kết rõ ràng.</p>
-    <button>Xem chính sách & điều khoản</button>
+	<span class="ship__subtitle">chính sách</span>
+	<h1>Tường Hưng Logistic cam kết dịch vụ <br/> với Điều Khoản & Chính Sách rõ ràng</h1>
+	<p>Nhằm mang đến cho các bạn dịch vụ nhập hàng tốt nhất, chúng tôi luôn nỗ lực cải tiền <br/>
+		không
+		ngừng nhằm nâng cao chất lượng phục vụ , đem đến sự hài lòng cho các bạn sử dụng <br/> dịch
+		vụ của
+		chúng tôi! Mọi chính sách đều được chúng tôi cam kết rõ ràng.</p>
+	<button>Xem chính sách & điều khoản</button>
 </section>
 <!-- footer -->
 <div class="bg-white py-3">
-    <footer class="container mt-3 my-footer">
-        <div class="row">
-            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4">
-                <h3 class="mb-3 my-title">Hỗ trợ khách hàng</h3>
-                <p class="mb-2" style="font-size: 12.5px">
-                    Hotline: <a href="#">1900-6035</a><br/>
-                    (1000đ/phút, 8-21h kể cả T7,CN)
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#"> Các câu hỏi thường gặp </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#"> Gưi yêu cầu hỗ trợ </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#"> Hướng dẫn đặt hàng </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#"> Phương thức vận chuyển </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#"> Hướng dẫn trả góp </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#">Chính sách </a>
-                </p>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4 col-half-offset">
-                <h3 class="mb-3 my-title">Về taobao</h3>
+	<footer class="container mt-3 my-footer">
+		<div class="row">
+			<div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4">
+				<h3 class="mb-3 my-title">Hỗ trợ khách hàng</h3>
+				<p class="mb-2" style="font-size: 12.5px">
+					Hotline: <a href="#">1900-6035</a><br/>
+					(1000đ/phút, 8-21h kể cả T7,CN)
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#"> Các câu hỏi thường gặp </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#"> Gưi yêu cầu hỗ trợ </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#"> Hướng dẫn đặt hàng </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#"> Phương thức vận chuyển </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#"> Hướng dẫn trả góp </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#">Chính sách </a>
+				</p>
+			</div>
+			<div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4 col-half-offset">
+				<h3 class="mb-3 my-title">Về taobao</h3>
 
-                <p class="mb-2 footer-item">
-                    <a href="#"> Giới thiệu taobao </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#"> Taobao blog</a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#">Tuyển dụng </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#">Chính sách bảo mật thanh toán </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#"> Chính sách giải quyết khiếu nại </a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#">Điều khoản sử dụng </a>
-                </p>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4  col-half-offset">
-                <h3 class="mb-3 my-title">Hợp tác và liên kết</h3>
+				<p class="mb-2 footer-item">
+					<a href="#"> Giới thiệu taobao </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#"> Taobao blog</a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#">Tuyển dụng </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#">Chính sách bảo mật thanh toán </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#"> Chính sách giải quyết khiếu nại </a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#">Điều khoản sử dụng </a>
+				</p>
+			</div>
+			<div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4  col-half-offset">
+				<h3 class="mb-3 my-title">Hợp tác và liên kết</h3>
 
-                <p class="mb-2 footer-item">
-                    <a href="#"> Quy chế hoạt động Sàn GDTMDT</a>
-                </p>
-                <p class="mb-2 footer-item">
-                    <a href="#">Bán hàng cùng taobao</a>
-                </p>
-                <h3 class="my-3 my-title">Chưng nhận bởi</h3>
+				<p class="mb-2 footer-item">
+					<a href="#"> Quy chế hoạt động Sàn GDTMDT</a>
+				</p>
+				<p class="mb-2 footer-item">
+					<a href="#">Bán hàng cùng taobao</a>
+				</p>
+				<h3 class="my-3 my-title">Chưng nhận bởi</h3>
 
-                <div class="logo-taobao" class="w-50">
-                    <img src="../static/image/bo-cong-thuong-2.png" class="w-100 h-100
+				<div class="logo-taobao" class="w-50">
+					<img src="../static/image/bo-cong-thuong-2.png" class="w-100 h-100
               object-fit-cover" alt=cer"/>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4 col-half-offset">
-                <h3 class="mb-3 my-title">Phương thức thanh toán</h3>
-                <div
-                    class="d-flex align-items-center justify-content-between flex-wrap"
-                >
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4 col-half-offset">
+				<h3 class="mb-3 my-title">Phương thức thanh toán</h3>
+				<div
+					class="d-flex align-items-center justify-content-between flex-wrap"
+				>
               <span class="icon">
                 <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+	                width="32"
+	                height="32"
+	                viewBox="0 0 32 32"
+	                fill="none"
+	                xmlns="http://www.w3.org/2000/svg"
                 >
                   <mask
-                      id="mask0_1329:61134"
-                      style="mask-type: alpha"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="6"
-                      width="32"
-                      height="20"
+	                  id="mask0_1329:61134"
+	                  style="mask-type: alpha"
+	                  maskUnits="userSpaceOnUse"
+	                  x="0"
+	                  y="6"
+	                  width="32"
+	                  height="20"
                   >
                     <rect
-                        y="6"
-                        width="32"
-                        height="20"
-                        rx="1.81818"
-                        fill="white"
+	                    y="6"
+	                    width="32"
+	                    height="20"
+	                    rx="1.81818"
+	                    fill="white"
                     ></rect>
                   </mask>
                   <g mask="url(#mask0_1329:61134)">
                     <rect
-                        opacity="0.01"
-                        x="-1"
-                        y="4"
-                        width="34.04"
-                        height="23"
-                        fill="white"
+	                    opacity="0.01"
+	                    x="-1"
+	                    y="4"
+	                    width="34.04"
+	                    height="23"
+	                    fill="white"
                     ></rect>
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M9.8116 10.6916L7.26655 17.2114L6.23703 11.6676C6.11637 11.0489 5.63944 10.6916 5.10955 10.6916H0.949103L0.891235 10.9696C1.74526 11.1578 2.7154 11.4606 3.30354 11.7849C3.66323 11.9827 3.76572 12.156 3.88411 12.6263L5.83384 20.2704H8.41786L12.3794 10.6916H9.8116ZM13.4285 10.6916L11.4062 20.2704H13.8514L15.8726 10.6916H13.4285ZM27.4466 13.2791L28.1868 16.8763H26.1588L27.4466 13.2791ZM27.0873 10.6916C26.6187 10.6916 26.2234 10.9688 26.0472 11.3943L22.3792 20.2704H24.945L25.4556 18.8405H28.5911L28.8876 20.2704H31.149L29.1754 10.6916H27.0873ZM16.5398 13.6828C16.5224 15.062 17.7528 15.8321 18.6794 16.2895C19.6318 16.7594 19.9514 17.0603 19.948 17.4805C19.9408 18.1229 19.1881 18.4066 18.4842 18.4177C17.2558 18.4373 16.5417 18.0815 15.9736 17.8128L15.5311 19.9112C16.1007 20.1776 17.1555 20.4095 18.2497 20.4199C20.8175 20.4199 22.4972 19.1353 22.5063 17.1431C22.5165 14.6154 19.0565 14.4755 19.0799 13.3455C19.0883 13.0031 19.4109 12.6374 20.1178 12.5447C20.4676 12.4975 21.4332 12.4615 22.5282 12.9725L22.9579 10.9423C22.3693 10.725 21.6125 10.5168 20.67 10.5168C18.2531 10.5168 16.5534 11.8186 16.5398 13.6828Z"
-                        fill="#1A1F71"
+	                    fill-rule="evenodd"
+	                    clip-rule="evenodd"
+	                    d="M9.8116 10.6916L7.26655 17.2114L6.23703 11.6676C6.11637 11.0489 5.63944 10.6916 5.10955 10.6916H0.949103L0.891235 10.9696C1.74526 11.1578 2.7154 11.4606 3.30354 11.7849C3.66323 11.9827 3.76572 12.156 3.88411 12.6263L5.83384 20.2704H8.41786L12.3794 10.6916H9.8116ZM13.4285 10.6916L11.4062 20.2704H13.8514L15.8726 10.6916H13.4285ZM27.4466 13.2791L28.1868 16.8763H26.1588L27.4466 13.2791ZM27.0873 10.6916C26.6187 10.6916 26.2234 10.9688 26.0472 11.3943L22.3792 20.2704H24.945L25.4556 18.8405H28.5911L28.8876 20.2704H31.149L29.1754 10.6916H27.0873ZM16.5398 13.6828C16.5224 15.062 17.7528 15.8321 18.6794 16.2895C19.6318 16.7594 19.9514 17.0603 19.948 17.4805C19.9408 18.1229 19.1881 18.4066 18.4842 18.4177C17.2558 18.4373 16.5417 18.0815 15.9736 17.8128L15.5311 19.9112C16.1007 20.1776 17.1555 20.4095 18.2497 20.4199C20.8175 20.4199 22.4972 19.1353 22.5063 17.1431C22.5165 14.6154 19.0565 14.4755 19.0799 13.3455C19.0883 13.0031 19.4109 12.6374 20.1178 12.5447C20.4676 12.4975 21.4332 12.4615 22.5282 12.9725L22.9579 10.9423C22.3693 10.725 21.6125 10.5168 20.67 10.5168C18.2531 10.5168 16.5534 11.8186 16.5398 13.6828Z"
+	                    fill="#1A1F71"
                     ></path>
                   </g>
                 </svg>
               </span>
-                    <span class="icon">
+					<span class="icon">
                 <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+	                width="32"
+	                height="32"
+	                viewBox="0 0 32 32"
+	                fill="none"
+	                xmlns="http://www.w3.org/2000/svg"
                 >
                   <defs>
                     <radialGradient
-                        id="paint0_radial_3173:26341"
-                        cx="0"
-                        cy="0"
-                        r="1"
-                        gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(16 16) rotate(90) scale(17.7561 28.4098)"
+	                    id="paint0_radial_3173:26341"
+	                    cx="0"
+	                    cy="0"
+	                    r="1"
+	                    gradientUnits="userSpaceOnUse"
+	                    gradientTransform="translate(16 16) rotate(90) scale(17.7561 28.4098)"
                     >
                       <stop stop-color="#004D9B"></stop>
                       <stop offset="1" stop-color="#002462"></stop>
                     </radialGradient>
                     <linearGradient
-                        id="paint1_linear_3173:26341"
-                        x1="-13.6766"
-                        y1="0.916464"
-                        x2="3.09852"
-                        y2="38.1376"
-                        gradientUnits="userSpaceOnUse"
+	                    id="paint1_linear_3173:26341"
+	                    x1="-13.6766"
+	                    y1="0.916464"
+	                    x2="3.09852"
+	                    y2="38.1376"
+	                    gradientUnits="userSpaceOnUse"
                     >
                       <stop stop-color="#33C3F5"></stop>
                       <stop offset="1" stop-color="#2241EC"></stop>
@@ -576,116 +679,116 @@
                     </linearGradient>
                   </defs>
                   <path
-                      d="M0 12.0235C0 9.9151 0 8.86088 0.410328 8.05557C0.771263 7.34719 1.34719 6.77126 2.05557 6.41033C2.86088 6 3.9151 6 6.02353 6H25.9765C28.0849 6 29.1391 6 29.9444 6.41033C30.6528 6.77126 31.2287 7.34719 31.5897 8.05557C32 8.86088 32 9.9151 32 12.0235V19.9765C32 22.0849 32 23.1391 31.5897 23.9444C31.2287 24.6528 30.6528 25.2287 29.9444 25.5897C29.1391 26 28.0849 26 25.9765 26H6.02353C3.9151 26 2.86088 26 2.05557 25.5897C1.34719 25.2287 0.771263 24.6528 0.410328 23.9444C0 23.1391 0 22.0849 0 19.9765V12.0235Z"
-                      fill="url(#paint0_radial_3173:26341)"
+	                  d="M0 12.0235C0 9.9151 0 8.86088 0.410328 8.05557C0.771263 7.34719 1.34719 6.77126 2.05557 6.41033C2.86088 6 3.9151 6 6.02353 6H25.9765C28.0849 6 29.1391 6 29.9444 6.41033C30.6528 6.77126 31.2287 7.34719 31.5897 8.05557C32 8.86088 32 9.9151 32 12.0235V19.9765C32 22.0849 32 23.1391 31.5897 23.9444C31.2287 24.6528 30.6528 25.2287 29.9444 25.5897C29.1391 26 28.0849 26 25.9765 26H6.02353C3.9151 26 2.86088 26 2.05557 25.5897C1.34719 25.2287 0.771263 24.6528 0.410328 23.9444C0 23.1391 0 22.0849 0 19.9765V12.0235Z"
+	                  fill="url(#paint0_radial_3173:26341)"
                   ></path>
                   <mask
-                      id="mask0_3173:26341"
-                      style="mask-type: alpha"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="6"
-                      width="32"
-                      height="20"
+	                  id="mask0_3173:26341"
+	                  style="mask-type: alpha"
+	                  maskUnits="userSpaceOnUse"
+	                  x="0"
+	                  y="6"
+	                  width="32"
+	                  height="20"
                   >
                     <rect y="6" width="32" height="20" fill="white"></rect>
                   </mask>
                   <g mask="url(#mask0_3173:26341)">
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.9036 10.25C12.9282 10.25 12.137 11.0445 12.137 12.0248C12.137 13.0043 12.9282 13.7997 13.9036 13.7997C14.879 13.7997 15.6711 13.0043 15.6711 12.0248C15.6711 11.0445 14.879 10.25 13.9036 10.25ZM13.9036 13.492C13.1553 13.492 12.5512 12.8835 12.5512 12.1341C12.5512 12.0047 12.5693 11.8811 12.6037 11.7613H15.2044C15.2388 11.8811 15.2579 12.0047 15.2579 12.1341C15.2579 12.8835 14.6518 13.492 13.9036 13.492ZM22.7325 10.25C21.7571 10.25 20.9649 11.0445 20.9649 12.0248C20.9649 13.0043 21.7571 13.7997 22.7325 13.7997C23.7088 13.7997 24.5 13.0043 24.5 12.0248C24.5 11.0445 23.7088 10.25 22.7325 10.25ZM22.7325 13.492C21.9852 13.492 21.3791 12.8835 21.3791 12.1341C21.3791 12.0047 21.3982 11.8811 21.4316 11.7613H24.0324C24.0667 11.8811 24.0858 12.0047 24.0858 12.1341C24.0858 12.8835 23.4807 13.492 22.7325 13.492ZM15.5169 15.2111C15.5169 14.7987 15.8213 14.4667 16.2785 14.4667C16.7146 14.4667 17.0391 14.7485 17.0391 15.2111V17.3838L19.5368 14.7485C19.6475 14.6275 19.8403 14.4667 20.1247 14.4667C20.5103 14.4667 20.8758 14.7589 20.8758 15.1912C20.8758 15.4523 20.7135 15.6642 20.3786 15.9962L18.4602 17.8671L20.8052 20.2905C21.0485 20.5326 21.2308 20.754 21.2308 21.0548C21.2308 21.5287 20.8558 21.75 20.4396 21.75C20.1457 21.75 19.9529 21.5788 19.6685 21.2771L17.0391 18.4602V21.0255C17.0391 21.418 16.7347 21.75 16.2785 21.75C15.8414 21.75 15.5169 21.4681 15.5169 21.0255V15.2111ZM9.29616 15.8669H8.19002C7.70233 15.8669 7.5 15.512 7.5 15.1668C7.5 14.8119 7.75387 14.4667 8.19002 14.4667H11.9255C12.3617 14.4667 12.6155 14.8119 12.6155 15.1668C12.6155 15.512 12.4123 15.8669 11.9255 15.8669H10.8194V20.9593C10.8194 21.4667 10.4949 21.75 10.0578 21.75C9.62066 21.75 9.29616 21.4667 9.29616 20.9593V15.8669ZM22.0067 15.2518C22.0067 14.7485 22.3322 14.4667 22.7684 14.4667C23.2045 14.4667 23.529 14.7485 23.529 15.2518V20.9659C23.529 21.4681 23.2045 21.75 22.7684 21.75C22.3322 21.75 22.0067 21.4681 22.0067 20.9659V15.2518ZM13.2263 15.2518C13.2263 14.7485 13.5508 14.4667 13.987 14.4667C14.4241 14.4667 14.7486 14.7485 14.7486 15.2518V20.9659C14.7486 21.4681 14.4241 21.75 13.987 21.75C13.5508 21.75 13.2263 21.4681 13.2263 20.9659V15.2518Z"
-                        fill="white"
+	                    fill-rule="evenodd"
+	                    clip-rule="evenodd"
+	                    d="M13.9036 10.25C12.9282 10.25 12.137 11.0445 12.137 12.0248C12.137 13.0043 12.9282 13.7997 13.9036 13.7997C14.879 13.7997 15.6711 13.0043 15.6711 12.0248C15.6711 11.0445 14.879 10.25 13.9036 10.25ZM13.9036 13.492C13.1553 13.492 12.5512 12.8835 12.5512 12.1341C12.5512 12.0047 12.5693 11.8811 12.6037 11.7613H15.2044C15.2388 11.8811 15.2579 12.0047 15.2579 12.1341C15.2579 12.8835 14.6518 13.492 13.9036 13.492ZM22.7325 10.25C21.7571 10.25 20.9649 11.0445 20.9649 12.0248C20.9649 13.0043 21.7571 13.7997 22.7325 13.7997C23.7088 13.7997 24.5 13.0043 24.5 12.0248C24.5 11.0445 23.7088 10.25 22.7325 10.25ZM22.7325 13.492C21.9852 13.492 21.3791 12.8835 21.3791 12.1341C21.3791 12.0047 21.3982 11.8811 21.4316 11.7613H24.0324C24.0667 11.8811 24.0858 12.0047 24.0858 12.1341C24.0858 12.8835 23.4807 13.492 22.7325 13.492ZM15.5169 15.2111C15.5169 14.7987 15.8213 14.4667 16.2785 14.4667C16.7146 14.4667 17.0391 14.7485 17.0391 15.2111V17.3838L19.5368 14.7485C19.6475 14.6275 19.8403 14.4667 20.1247 14.4667C20.5103 14.4667 20.8758 14.7589 20.8758 15.1912C20.8758 15.4523 20.7135 15.6642 20.3786 15.9962L18.4602 17.8671L20.8052 20.2905C21.0485 20.5326 21.2308 20.754 21.2308 21.0548C21.2308 21.5287 20.8558 21.75 20.4396 21.75C20.1457 21.75 19.9529 21.5788 19.6685 21.2771L17.0391 18.4602V21.0255C17.0391 21.418 16.7347 21.75 16.2785 21.75C15.8414 21.75 15.5169 21.4681 15.5169 21.0255V15.2111ZM9.29616 15.8669H8.19002C7.70233 15.8669 7.5 15.512 7.5 15.1668C7.5 14.8119 7.75387 14.4667 8.19002 14.4667H11.9255C12.3617 14.4667 12.6155 14.8119 12.6155 15.1668C12.6155 15.512 12.4123 15.8669 11.9255 15.8669H10.8194V20.9593C10.8194 21.4667 10.4949 21.75 10.0578 21.75C9.62066 21.75 9.29616 21.4667 9.29616 20.9593V15.8669ZM22.0067 15.2518C22.0067 14.7485 22.3322 14.4667 22.7684 14.4667C23.2045 14.4667 23.529 14.7485 23.529 15.2518V20.9659C23.529 21.4681 23.2045 21.75 22.7684 21.75C22.3322 21.75 22.0067 21.4681 22.0067 20.9659V15.2518ZM13.2263 15.2518C13.2263 14.7485 13.5508 14.4667 13.987 14.4667C14.4241 14.4667 14.7486 14.7485 14.7486 15.2518V20.9659C14.7486 21.4681 14.4241 21.75 13.987 21.75C13.5508 21.75 13.2263 21.4681 13.2263 20.9659V15.2518Z"
+	                    fill="white"
                     ></path>
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M2.25 16C2.25 8.40608 8.40608 2.25 16 2.25C23.5939 2.25 29.75 8.40608 29.75 16C29.75 17.1313 29.6131 18.2459 29.3447 19.3257C27.8336 25.4072 22.3523 29.75 16 29.75C8.40608 29.75 2.25 23.5939 2.25 16ZM26.9052 16C26.9052 9.97724 22.0228 5.09483 16 5.09483C9.97724 5.09483 5.09483 9.97724 5.09483 16C5.09483 22.0228 9.97724 26.9052 16 26.9052C21.0378 26.9052 25.3861 23.46 26.5839 18.6397C26.7965 17.7838 26.9052 16.8996 26.9052 16Z"
-                        fill="url(#paint1_linear_3173:26341)"
+	                    fill-rule="evenodd"
+	                    clip-rule="evenodd"
+	                    d="M2.25 16C2.25 8.40608 8.40608 2.25 16 2.25C23.5939 2.25 29.75 8.40608 29.75 16C29.75 17.1313 29.6131 18.2459 29.3447 19.3257C27.8336 25.4072 22.3523 29.75 16 29.75C8.40608 29.75 2.25 23.5939 2.25 16ZM26.9052 16C26.9052 9.97724 22.0228 5.09483 16 5.09483C9.97724 5.09483 5.09483 9.97724 5.09483 16C5.09483 22.0228 9.97724 26.9052 16 26.9052C21.0378 26.9052 25.3861 23.46 26.5839 18.6397C26.7965 17.7838 26.9052 16.8996 26.9052 16Z"
+	                    fill="url(#paint1_linear_3173:26341)"
                     ></path>
                   </g>
                 </svg>
               </span>
-                    <span class="icon">
+					<span class="icon">
                 <svg
-                    width="32"
-                    height="33"
-                    viewBox="0 0 32 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+	                width="32"
+	                height="33"
+	                viewBox="0 0 32 33"
+	                fill="none"
+	                xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
-                      opacity="0.01"
-                      x="1"
-                      y="6.6665"
-                      width="30"
-                      height="20"
-                      fill="white"
+	                  opacity="0.01"
+	                  x="1"
+	                  y="6.6665"
+	                  width="30"
+	                  height="20"
+	                  fill="white"
                   ></rect>
                   <rect
-                      x="12.3877"
-                      y="10.1254"
-                      width="7.17949"
-                      height="12.9247"
-                      fill="#FF5F00"
+	                  x="12.3877"
+	                  y="10.1254"
+	                  width="7.17949"
+	                  height="12.9247"
+	                  fill="#FF5F00"
                   ></rect>
                   <path
-                      d="M12.8434 16.5889C12.8407 14.0664 13.9964 11.6828 15.9773 10.1254C12.6131 7.47702 7.78209 7.86278 4.87927 11.0116C1.97644 14.1604 1.97644 19.0151 4.87927 22.1639C7.78209 25.3127 12.6131 25.6985 15.9773 23.0501C13.997 21.4931 12.8414 19.1106 12.8434 16.5889Z"
-                      fill="#EB001B"
+	                  d="M12.8434 16.5889C12.8407 14.0664 13.9964 11.6828 15.9773 10.1254C12.6131 7.47702 7.78209 7.86278 4.87927 11.0116C1.97644 14.1604 1.97644 19.0151 4.87927 22.1639C7.78209 25.3127 12.6131 25.6985 15.9773 23.0501C13.997 21.4931 12.8414 19.1106 12.8434 16.5889Z"
+	                  fill="#EB001B"
                   ></path>
                   <path
-                      d="M29.2539 16.5889C29.2538 19.7358 27.46 22.6064 24.6343 23.9815C21.8087 25.3567 18.4472 24.995 15.9775 23.0501C17.9569 21.4918 19.1126 19.1096 19.1126 16.5877C19.1126 14.0659 17.9569 11.6837 15.9775 10.1254C18.4472 8.18045 21.8087 7.81875 24.6343 9.19392C27.46 10.5691 29.2538 13.4397 29.2539 16.5866V16.5889Z"
-                      fill="#F79E1B"
+	                  d="M29.2539 16.5889C29.2538 19.7358 27.46 22.6064 24.6343 23.9815C21.8087 25.3567 18.4472 24.995 15.9775 23.0501C17.9569 21.4918 19.1126 19.1096 19.1126 16.5877C19.1126 14.0659 17.9569 11.6837 15.9775 10.1254C18.4472 8.18045 21.8087 7.81875 24.6343 9.19392C27.46 10.5691 29.2538 13.4397 29.2539 16.5866V16.5889Z"
+	                  fill="#F79E1B"
                   ></path>
                 </svg>
               </span>
-                    <span class="icon">
+					<span class="icon">
                 <svg
-                    width="32"
-                    height="33"
-                    viewBox="0 0 32 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+	                width="32"
+	                height="33"
+	                viewBox="0 0 32 33"
+	                fill="none"
+	                xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
-                      opacity="0.01"
-                      y="5.6665"
-                      width="32"
-                      height="21.3333"
-                      fill="white"
+	                  opacity="0.01"
+	                  y="5.6665"
+	                  width="32"
+	                  height="21.3333"
+	                  fill="white"
                   ></rect>
                   <path
-                      d="M29.5619 22.6087C29.5619 24.9501 27.6552 26.8567 25.3138 26.8567H2.2002V10.0317C2.2002 7.6902 4.10682 5.78358 6.44828 5.78358H29.5619V22.6087Z"
-                      fill="white"
+	                  d="M29.5619 22.6087C29.5619 24.9501 27.6552 26.8567 25.3138 26.8567H2.2002V10.0317C2.2002 7.6902 4.10682 5.78358 6.44828 5.78358H29.5619V22.6087Z"
+	                  fill="white"
                   ></path>
                   <path
-                      d="M22.0356 18.2937H23.7917C23.8419 18.2937 23.959 18.277 24.0092 18.277C24.3437 18.2101 24.628 17.909 24.628 17.4909C24.628 17.0895 24.3437 16.7885 24.0092 16.7048C23.959 16.6881 23.8586 16.6881 23.7917 16.6881H22.0356V18.2937Z"
-                      fill="url(#paint0_linear)"
+	                  d="M22.0356 18.2937H23.7917C23.8419 18.2937 23.959 18.277 24.0092 18.277C24.3437 18.2101 24.628 17.909 24.628 17.4909C24.628 17.0895 24.3437 16.7885 24.0092 16.7048C23.959 16.6881 23.8586 16.6881 23.7917 16.6881H22.0356V18.2937Z"
+	                  fill="url(#paint0_linear)"
                   ></path>
                   <path
-                      d="M23.5909 7.20518C21.9184 7.20518 20.547 8.55988 20.547 10.2491V13.4101H24.8453C24.9456 13.4101 25.0627 13.4101 25.1463 13.4268C26.1163 13.477 26.8355 13.9787 26.8355 14.8484C26.8355 15.5341 26.3505 16.1195 25.4473 16.2365V16.27C26.4341 16.3369 27.1867 16.8888 27.1867 17.7418C27.1867 18.6616 26.3505 19.2637 25.2467 19.2637H20.5303V25.4519H24.9958C26.6683 25.4519 28.0397 24.0972 28.0397 22.408V7.20518H23.5909Z"
-                      fill="url(#paint1_linear)"
+	                  d="M23.5909 7.20518C21.9184 7.20518 20.547 8.55988 20.547 10.2491V13.4101H24.8453C24.9456 13.4101 25.0627 13.4101 25.1463 13.4268C26.1163 13.477 26.8355 13.9787 26.8355 14.8484C26.8355 15.5341 26.3505 16.1195 25.4473 16.2365V16.27C26.4341 16.3369 27.1867 16.8888 27.1867 17.7418C27.1867 18.6616 26.3505 19.2637 25.2467 19.2637H20.5303V25.4519H24.9958C26.6683 25.4519 28.0397 24.0972 28.0397 22.408V7.20518H23.5909Z"
+	                  fill="url(#paint1_linear)"
                   ></path>
                   <path
-                      d="M24.4106 15.0491C24.4106 14.6477 24.1262 14.3801 23.7917 14.3299C23.7583 14.3299 23.6747 14.3132 23.6245 14.3132H22.0356V15.785H23.6245C23.6747 15.785 23.775 15.785 23.7917 15.7682C24.1262 15.7181 24.4106 15.4505 24.4106 15.0491Z"
-                      fill="url(#paint2_linear)"
+	                  d="M24.4106 15.0491C24.4106 14.6477 24.1262 14.3801 23.7917 14.3299C23.7583 14.3299 23.6747 14.3132 23.6245 14.3132H22.0356V15.785H23.6245C23.6747 15.785 23.775 15.785 23.7917 15.7682C24.1262 15.7181 24.4106 15.4505 24.4106 15.0491Z"
+	                  fill="url(#paint2_linear)"
                   ></path>
                   <path
-                      d="M6.76619 7.20518C5.09372 7.20518 3.72229 8.55988 3.72229 10.2491V17.7585C4.57525 18.1766 5.46166 18.4442 6.34808 18.4442C7.40173 18.4442 7.97038 17.8087 7.97038 16.939V13.3933H10.5794V16.9223C10.5794 18.2937 9.72647 19.4142 6.83309 19.4142C5.077 19.4142 3.70557 19.0296 3.70557 19.0296V25.4351H8.17107C9.84355 25.4351 11.215 24.0804 11.215 22.3912V7.20518H6.76619Z"
-                      fill="url(#paint3_linear)"
+	                  d="M6.76619 7.20518C5.09372 7.20518 3.72229 8.55988 3.72229 10.2491V17.7585C4.57525 18.1766 5.46166 18.4442 6.34808 18.4442C7.40173 18.4442 7.97038 17.8087 7.97038 16.939V13.3933H10.5794V16.9223C10.5794 18.2937 9.72647 19.4142 6.83309 19.4142C5.077 19.4142 3.70557 19.0296 3.70557 19.0296V25.4351H8.17107C9.84355 25.4351 11.215 24.0804 11.215 22.3912V7.20518H6.76619Z"
+	                  fill="url(#paint3_linear)"
                   ></path>
                   <path
-                      d="M15.1787 7.20518C13.5062 7.20518 12.1348 8.55988 12.1348 10.2491V14.2296C12.9041 13.5773 14.2421 13.1592 16.3996 13.2595C17.5536 13.3097 18.7912 13.6275 18.7912 13.6275V14.9153C18.1724 14.5975 17.4365 14.3132 16.4832 14.2463C14.8442 14.1292 13.8574 14.932 13.8574 16.3369C13.8574 17.7585 14.8442 18.5613 16.4832 18.4275C17.4365 18.3606 18.1724 18.0595 18.7912 17.7585V19.0463C18.7912 19.0463 17.5703 19.3641 16.3996 19.4142C14.2421 19.5146 12.9041 19.0965 12.1348 18.4442V25.4686H16.6003C18.2727 25.4686 19.6442 24.1139 19.6442 22.4247V7.20518H15.1787Z"
-                      fill="url(#paint4_linear)"
+	                  d="M15.1787 7.20518C13.5062 7.20518 12.1348 8.55988 12.1348 10.2491V14.2296C12.9041 13.5773 14.2421 13.1592 16.3996 13.2595C17.5536 13.3097 18.7912 13.6275 18.7912 13.6275V14.9153C18.1724 14.5975 17.4365 14.3132 16.4832 14.2463C14.8442 14.1292 13.8574 14.932 13.8574 16.3369C13.8574 17.7585 14.8442 18.5613 16.4832 18.4275C17.4365 18.3606 18.1724 18.0595 18.7912 17.7585V19.0463C18.7912 19.0463 17.5703 19.3641 16.3996 19.4142C14.2421 19.5146 12.9041 19.0965 12.1348 18.4442V25.4686H16.6003C18.2727 25.4686 19.6442 24.1139 19.6442 22.4247V7.20518H15.1787Z"
+	                  fill="url(#paint4_linear)"
                   ></path>
                   <defs>
                     <linearGradient
-                        id="paint0_linear"
-                        x1="20.5439"
-                        y1="19.8203"
-                        x2="28.0604"
-                        y2="19.8203"
-                        gradientUnits="userSpaceOnUse"
+	                    id="paint0_linear"
+	                    x1="20.5439"
+	                    y1="19.8203"
+	                    x2="28.0604"
+	                    y2="19.8203"
+	                    gradientUnits="userSpaceOnUse"
                     >
                       <stop stop-color="#007940"></stop>
                       <stop offset="0.2285" stop-color="#00873F"></stop>
@@ -693,12 +796,12 @@
                       <stop offset="1" stop-color="#5CB531"></stop>
                     </linearGradient>
                     <linearGradient
-                        id="paint1_linear"
-                        x1="20.544"
-                        y1="25.4526"
-                        x2="28.0602"
-                        y2="25.4526"
-                        gradientUnits="userSpaceOnUse"
+	                    id="paint1_linear"
+	                    x1="20.544"
+	                    y1="25.4526"
+	                    x2="28.0602"
+	                    y2="25.4526"
+	                    gradientUnits="userSpaceOnUse"
                     >
                       <stop stop-color="#007940"></stop>
                       <stop offset="0.2285" stop-color="#00873F"></stop>
@@ -706,12 +809,12 @@
                       <stop offset="1" stop-color="#5CB531"></stop>
                     </linearGradient>
                     <linearGradient
-                        id="paint2_linear"
-                        x1="20.5438"
-                        y1="17.3754"
-                        x2="28.0598"
-                        y2="17.3754"
-                        gradientUnits="userSpaceOnUse"
+	                    id="paint2_linear"
+	                    x1="20.5438"
+	                    y1="17.3754"
+	                    x2="28.0598"
+	                    y2="17.3754"
+	                    gradientUnits="userSpaceOnUse"
                     >
                       <stop stop-color="#007940"></stop>
                       <stop offset="0.2285" stop-color="#00873F"></stop>
@@ -719,12 +822,12 @@
                       <stop offset="1" stop-color="#5CB531"></stop>
                     </linearGradient>
                     <linearGradient
-                        id="paint3_linear"
-                        x1="3.71849"
-                        y1="25.5849"
-                        x2="11.3507"
-                        y2="25.5849"
-                        gradientUnits="userSpaceOnUse"
+	                    id="paint3_linear"
+	                    x1="3.71849"
+	                    y1="25.5849"
+	                    x2="11.3507"
+	                    y2="25.5849"
+	                    gradientUnits="userSpaceOnUse"
                     >
                       <stop stop-color="#1F286F"></stop>
                       <stop offset="0.4751" stop-color="#004E94"></stop>
@@ -732,12 +835,12 @@
                       <stop offset="1" stop-color="#006FBC"></stop>
                     </linearGradient>
                     <linearGradient
-                        id="paint4_linear"
-                        x1="12.0913"
-                        y1="25.3346"
-                        x2="19.5036"
-                        y2="25.3346"
-                        gradientUnits="userSpaceOnUse"
+	                    id="paint4_linear"
+	                    x1="12.0913"
+	                    y1="25.3346"
+	                    x2="19.5036"
+	                    y2="25.3346"
+	                    gradientUnits="userSpaceOnUse"
                     >
                       <stop stop-color="#6C2C2F"></stop>
                       <stop offset="0.1735" stop-color="#882730"></stop>
@@ -748,33 +851,33 @@
                   </defs>
                 </svg>
               </span>
-                    <span class="icon">
+					<span class="icon">
                 <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+	                width="32"
+	                height="32"
+	                viewBox="0 0 32 32"
+	                fill="none"
+	                xmlns="http://www.w3.org/2000/svg"
                 >
                   <defs>
                     <radialGradient
-                        id="paint0_radial_3173:26341"
-                        cx="0"
-                        cy="0"
-                        r="1"
-                        gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(16 16) rotate(90) scale(17.7561 28.4098)"
+	                    id="paint0_radial_3173:26341"
+	                    cx="0"
+	                    cy="0"
+	                    r="1"
+	                    gradientUnits="userSpaceOnUse"
+	                    gradientTransform="translate(16 16) rotate(90) scale(17.7561 28.4098)"
                     >
                       <stop stop-color="#004D9B"></stop>
                       <stop offset="1" stop-color="#002462"></stop>
                     </radialGradient>
                     <linearGradient
-                        id="paint1_linear_3173:26341"
-                        x1="-13.6766"
-                        y1="0.916464"
-                        x2="3.09852"
-                        y2="38.1376"
-                        gradientUnits="userSpaceOnUse"
+	                    id="paint1_linear_3173:26341"
+	                    x1="-13.6766"
+	                    y1="0.916464"
+	                    x2="3.09852"
+	                    y2="38.1376"
+	                    gradientUnits="userSpaceOnUse"
                     >
                       <stop stop-color="#33C3F5"></stop>
                       <stop offset="1" stop-color="#2241EC"></stop>
@@ -782,169 +885,169 @@
                     </linearGradient>
                   </defs>
                   <path
-                      d="M0 12.0235C0 9.9151 0 8.86088 0.410328 8.05557C0.771263 7.34719 1.34719 6.77126 2.05557 6.41033C2.86088 6 3.9151 6 6.02353 6H25.9765C28.0849 6 29.1391 6 29.9444 6.41033C30.6528 6.77126 31.2287 7.34719 31.5897 8.05557C32 8.86088 32 9.9151 32 12.0235V19.9765C32 22.0849 32 23.1391 31.5897 23.9444C31.2287 24.6528 30.6528 25.2287 29.9444 25.5897C29.1391 26 28.0849 26 25.9765 26H6.02353C3.9151 26 2.86088 26 2.05557 25.5897C1.34719 25.2287 0.771263 24.6528 0.410328 23.9444C0 23.1391 0 22.0849 0 19.9765V12.0235Z"
-                      fill="url(#paint0_radial_3173:26341)"
+	                  d="M0 12.0235C0 9.9151 0 8.86088 0.410328 8.05557C0.771263 7.34719 1.34719 6.77126 2.05557 6.41033C2.86088 6 3.9151 6 6.02353 6H25.9765C28.0849 6 29.1391 6 29.9444 6.41033C30.6528 6.77126 31.2287 7.34719 31.5897 8.05557C32 8.86088 32 9.9151 32 12.0235V19.9765C32 22.0849 32 23.1391 31.5897 23.9444C31.2287 24.6528 30.6528 25.2287 29.9444 25.5897C29.1391 26 28.0849 26 25.9765 26H6.02353C3.9151 26 2.86088 26 2.05557 25.5897C1.34719 25.2287 0.771263 24.6528 0.410328 23.9444C0 23.1391 0 22.0849 0 19.9765V12.0235Z"
+	                  fill="url(#paint0_radial_3173:26341)"
                   ></path>
                   <mask
-                      id="mask0_3173:26341"
-                      style="mask-type: alpha"
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="6"
-                      width="32"
-                      height="20"
+	                  id="mask0_3173:26341"
+	                  style="mask-type: alpha"
+	                  maskUnits="userSpaceOnUse"
+	                  x="0"
+	                  y="6"
+	                  width="32"
+	                  height="20"
                   >
                     <rect y="6" width="32" height="20" fill="white"></rect>
                   </mask>
                   <g mask="url(#mask0_3173:26341)">
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.9036 10.25C12.9282 10.25 12.137 11.0445 12.137 12.0248C12.137 13.0043 12.9282 13.7997 13.9036 13.7997C14.879 13.7997 15.6711 13.0043 15.6711 12.0248C15.6711 11.0445 14.879 10.25 13.9036 10.25ZM13.9036 13.492C13.1553 13.492 12.5512 12.8835 12.5512 12.1341C12.5512 12.0047 12.5693 11.8811 12.6037 11.7613H15.2044C15.2388 11.8811 15.2579 12.0047 15.2579 12.1341C15.2579 12.8835 14.6518 13.492 13.9036 13.492ZM22.7325 10.25C21.7571 10.25 20.9649 11.0445 20.9649 12.0248C20.9649 13.0043 21.7571 13.7997 22.7325 13.7997C23.7088 13.7997 24.5 13.0043 24.5 12.0248C24.5 11.0445 23.7088 10.25 22.7325 10.25ZM22.7325 13.492C21.9852 13.492 21.3791 12.8835 21.3791 12.1341C21.3791 12.0047 21.3982 11.8811 21.4316 11.7613H24.0324C24.0667 11.8811 24.0858 12.0047 24.0858 12.1341C24.0858 12.8835 23.4807 13.492 22.7325 13.492ZM15.5169 15.2111C15.5169 14.7987 15.8213 14.4667 16.2785 14.4667C16.7146 14.4667 17.0391 14.7485 17.0391 15.2111V17.3838L19.5368 14.7485C19.6475 14.6275 19.8403 14.4667 20.1247 14.4667C20.5103 14.4667 20.8758 14.7589 20.8758 15.1912C20.8758 15.4523 20.7135 15.6642 20.3786 15.9962L18.4602 17.8671L20.8052 20.2905C21.0485 20.5326 21.2308 20.754 21.2308 21.0548C21.2308 21.5287 20.8558 21.75 20.4396 21.75C20.1457 21.75 19.9529 21.5788 19.6685 21.2771L17.0391 18.4602V21.0255C17.0391 21.418 16.7347 21.75 16.2785 21.75C15.8414 21.75 15.5169 21.4681 15.5169 21.0255V15.2111ZM9.29616 15.8669H8.19002C7.70233 15.8669 7.5 15.512 7.5 15.1668C7.5 14.8119 7.75387 14.4667 8.19002 14.4667H11.9255C12.3617 14.4667 12.6155 14.8119 12.6155 15.1668C12.6155 15.512 12.4123 15.8669 11.9255 15.8669H10.8194V20.9593C10.8194 21.4667 10.4949 21.75 10.0578 21.75C9.62066 21.75 9.29616 21.4667 9.29616 20.9593V15.8669ZM22.0067 15.2518C22.0067 14.7485 22.3322 14.4667 22.7684 14.4667C23.2045 14.4667 23.529 14.7485 23.529 15.2518V20.9659C23.529 21.4681 23.2045 21.75 22.7684 21.75C22.3322 21.75 22.0067 21.4681 22.0067 20.9659V15.2518ZM13.2263 15.2518C13.2263 14.7485 13.5508 14.4667 13.987 14.4667C14.4241 14.4667 14.7486 14.7485 14.7486 15.2518V20.9659C14.7486 21.4681 14.4241 21.75 13.987 21.75C13.5508 21.75 13.2263 21.4681 13.2263 20.9659V15.2518Z"
-                        fill="white"
+	                    fill-rule="evenodd"
+	                    clip-rule="evenodd"
+	                    d="M13.9036 10.25C12.9282 10.25 12.137 11.0445 12.137 12.0248C12.137 13.0043 12.9282 13.7997 13.9036 13.7997C14.879 13.7997 15.6711 13.0043 15.6711 12.0248C15.6711 11.0445 14.879 10.25 13.9036 10.25ZM13.9036 13.492C13.1553 13.492 12.5512 12.8835 12.5512 12.1341C12.5512 12.0047 12.5693 11.8811 12.6037 11.7613H15.2044C15.2388 11.8811 15.2579 12.0047 15.2579 12.1341C15.2579 12.8835 14.6518 13.492 13.9036 13.492ZM22.7325 10.25C21.7571 10.25 20.9649 11.0445 20.9649 12.0248C20.9649 13.0043 21.7571 13.7997 22.7325 13.7997C23.7088 13.7997 24.5 13.0043 24.5 12.0248C24.5 11.0445 23.7088 10.25 22.7325 10.25ZM22.7325 13.492C21.9852 13.492 21.3791 12.8835 21.3791 12.1341C21.3791 12.0047 21.3982 11.8811 21.4316 11.7613H24.0324C24.0667 11.8811 24.0858 12.0047 24.0858 12.1341C24.0858 12.8835 23.4807 13.492 22.7325 13.492ZM15.5169 15.2111C15.5169 14.7987 15.8213 14.4667 16.2785 14.4667C16.7146 14.4667 17.0391 14.7485 17.0391 15.2111V17.3838L19.5368 14.7485C19.6475 14.6275 19.8403 14.4667 20.1247 14.4667C20.5103 14.4667 20.8758 14.7589 20.8758 15.1912C20.8758 15.4523 20.7135 15.6642 20.3786 15.9962L18.4602 17.8671L20.8052 20.2905C21.0485 20.5326 21.2308 20.754 21.2308 21.0548C21.2308 21.5287 20.8558 21.75 20.4396 21.75C20.1457 21.75 19.9529 21.5788 19.6685 21.2771L17.0391 18.4602V21.0255C17.0391 21.418 16.7347 21.75 16.2785 21.75C15.8414 21.75 15.5169 21.4681 15.5169 21.0255V15.2111ZM9.29616 15.8669H8.19002C7.70233 15.8669 7.5 15.512 7.5 15.1668C7.5 14.8119 7.75387 14.4667 8.19002 14.4667H11.9255C12.3617 14.4667 12.6155 14.8119 12.6155 15.1668C12.6155 15.512 12.4123 15.8669 11.9255 15.8669H10.8194V20.9593C10.8194 21.4667 10.4949 21.75 10.0578 21.75C9.62066 21.75 9.29616 21.4667 9.29616 20.9593V15.8669ZM22.0067 15.2518C22.0067 14.7485 22.3322 14.4667 22.7684 14.4667C23.2045 14.4667 23.529 14.7485 23.529 15.2518V20.9659C23.529 21.4681 23.2045 21.75 22.7684 21.75C22.3322 21.75 22.0067 21.4681 22.0067 20.9659V15.2518ZM13.2263 15.2518C13.2263 14.7485 13.5508 14.4667 13.987 14.4667C14.4241 14.4667 14.7486 14.7485 14.7486 15.2518V20.9659C14.7486 21.4681 14.4241 21.75 13.987 21.75C13.5508 21.75 13.2263 21.4681 13.2263 20.9659V15.2518Z"
+	                    fill="white"
                     ></path>
                     <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M2.25 16C2.25 8.40608 8.40608 2.25 16 2.25C23.5939 2.25 29.75 8.40608 29.75 16C29.75 17.1313 29.6131 18.2459 29.3447 19.3257C27.8336 25.4072 22.3523 29.75 16 29.75C8.40608 29.75 2.25 23.5939 2.25 16ZM26.9052 16C26.9052 9.97724 22.0228 5.09483 16 5.09483C9.97724 5.09483 5.09483 9.97724 5.09483 16C5.09483 22.0228 9.97724 26.9052 16 26.9052C21.0378 26.9052 25.3861 23.46 26.5839 18.6397C26.7965 17.7838 26.9052 16.8996 26.9052 16Z"
-                        fill="url(#paint1_linear_3173:26341)"
+	                    fill-rule="evenodd"
+	                    clip-rule="evenodd"
+	                    d="M2.25 16C2.25 8.40608 8.40608 2.25 16 2.25C23.5939 2.25 29.75 8.40608 29.75 16C29.75 17.1313 29.6131 18.2459 29.3447 19.3257C27.8336 25.4072 22.3523 29.75 16 29.75C8.40608 29.75 2.25 23.5939 2.25 16ZM26.9052 16C26.9052 9.97724 22.0228 5.09483 16 5.09483C9.97724 5.09483 5.09483 9.97724 5.09483 16C5.09483 22.0228 9.97724 26.9052 16 26.9052C21.0378 26.9052 25.3861 23.46 26.5839 18.6397C26.7965 17.7838 26.9052 16.8996 26.9052 16Z"
+	                    fill="url(#paint1_linear_3173:26341)"
                     ></path>
                   </g>
                 </svg>
               </span>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4 col-half-offset">
-                <h3 class="mb-3 my-title">Kết nối với chúng tôi</h3>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-3 col-6 mt-5 mt-md-4 col-half-offset">
+				<h3 class="mb-3 my-title">Kết nối với chúng tôi</h3>
 
-                <div
-                    class="d-flex align-items-center justify-content-between flex-wrap"
-                >
+				<div
+					class="d-flex align-items-center justify-content-between flex-wrap"
+				>
               <span class="icon">
                 <svg
-                    width="32"
-                    height="33"
-                    viewBox="0 0 32 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+	                width="32"
+	                height="33"
+	                viewBox="0 0 32 33"
+	                fill="none"
+	                xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                      d="M0 16.6665C0 7.82995 7.16344 0.666504 16 0.666504C24.8366 0.666504 32 7.82995 32 16.6665C32 25.5031 24.8366 32.6665 16 32.6665C7.16344 32.6665 0 25.5031 0 16.6665Z"
-                      fill="#3B5998"
+	                  d="M0 16.6665C0 7.82995 7.16344 0.666504 16 0.666504C24.8366 0.666504 32 7.82995 32 16.6665C32 25.5031 24.8366 32.6665 16 32.6665C7.16344 32.6665 0 25.5031 0 16.6665Z"
+	                  fill="#3B5998"
                   ></path>
                   <path
-                      d="M17.6676 26.0742V17.3693H20.0706L20.389 14.3696H17.6676L17.6717 12.8682C17.6717 12.0858 17.7461 11.6666 18.8698 11.6666H20.372V8.6665H17.9687C15.082 8.6665 14.066 10.1217 14.066 12.5689V14.3699H12.2666V17.3696H14.066V26.0742H17.6676Z"
-                      fill="white"
+	                  d="M17.6676 26.0742V17.3693H20.0706L20.389 14.3696H17.6676L17.6717 12.8682C17.6717 12.0858 17.7461 11.6666 18.8698 11.6666H20.372V8.6665H17.9687C15.082 8.6665 14.066 10.1217 14.066 12.5689V14.3699H12.2666V17.3696H14.066V26.0742H17.6676Z"
+	                  fill="white"
                   ></path>
                 </svg>
               </span>
-                    <span class="icon">
+					<span class="icon">
                 <svg
-                    width="32"
-                    height="33"
-                    viewBox="0 0 32 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+	                width="32"
+	                height="33"
+	                viewBox="0 0 32 33"
+	                fill="none"
+	                xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                      d="M0 16.6665C0 7.82995 7.16344 0.666504 16 0.666504C24.8366 0.666504 32 7.82995 32 16.6665C32 25.5031 24.8366 32.6665 16 32.6665C7.16344 32.6665 0 25.5031 0 16.6665Z"
-                      fill="#FF0000"
+	                  d="M0 16.6665C0 7.82995 7.16344 0.666504 16 0.666504C24.8366 0.666504 32 7.82995 32 16.6665C32 25.5031 24.8366 32.6665 16 32.6665C7.16344 32.6665 0 25.5031 0 16.6665Z"
+	                  fill="#FF0000"
                   ></path>
                   <path
-                      d="M24.1768 12.7153C23.9805 11.9613 23.4022 11.3675 22.6679 11.166C21.3371 10.7998 16.0001 10.7998 16.0001 10.7998C16.0001 10.7998 10.6632 10.7998 9.3323 11.166C8.59795 11.3675 8.01962 11.9613 7.82335 12.7153C7.4668 14.0818 7.4668 16.9331 7.4668 16.9331C7.4668 16.9331 7.4668 19.7843 7.82335 21.151C8.01962 21.905 8.59795 22.4987 9.3323 22.7003C10.6632 23.0665 16.0001 23.0665 16.0001 23.0665C16.0001 23.0665 21.3371 23.0665 22.6679 22.7003C23.4022 22.4987 23.9805 21.905 24.1768 21.151C24.5335 19.7843 24.5335 16.9331 24.5335 16.9331C24.5335 16.9331 24.5335 14.0818 24.1768 12.7153Z"
-                      fill="white"
+	                  d="M24.1768 12.7153C23.9805 11.9613 23.4022 11.3675 22.6679 11.166C21.3371 10.7998 16.0001 10.7998 16.0001 10.7998C16.0001 10.7998 10.6632 10.7998 9.3323 11.166C8.59795 11.3675 8.01962 11.9613 7.82335 12.7153C7.4668 14.0818 7.4668 16.9331 7.4668 16.9331C7.4668 16.9331 7.4668 19.7843 7.82335 21.151C8.01962 21.905 8.59795 22.4987 9.3323 22.7003C10.6632 23.0665 16.0001 23.0665 16.0001 23.0665C16.0001 23.0665 21.3371 23.0665 22.6679 22.7003C23.4022 22.4987 23.9805 21.905 24.1768 21.151C24.5335 19.7843 24.5335 16.9331 24.5335 16.9331C24.5335 16.9331 24.5335 14.0818 24.1768 12.7153Z"
+	                  fill="white"
                   ></path>
                   <path
-                      d="M14.3999 19.8665V14.5332L18.6666 17.2L14.3999 19.8665Z"
-                      fill="#FF0000"
+	                  d="M14.3999 19.8665V14.5332L18.6666 17.2L14.3999 19.8665Z"
+	                  fill="#FF0000"
                   ></path>
                 </svg>
               </span>
-                    <span class="icon">
+					<span class="icon">
                 <svg
-                    width="32"
-                    height="33"
-                    viewBox="0 0 32 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+	                width="32"
+	                height="33"
+	                viewBox="0 0 32 33"
+	                fill="none"
+	                xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                      d="M0 16.6665C0 7.82995 7.16344 0.666504 16 0.666504C24.8366 0.666504 32 7.82995 32 16.6665C32 25.5031 24.8366 32.6665 16 32.6665C7.16344 32.6665 0 25.5031 0 16.6665Z"
-                      fill="#3171F6"
+	                  d="M0 16.6665C0 7.82995 7.16344 0.666504 16 0.666504C24.8366 0.666504 32 7.82995 32 16.6665C32 25.5031 24.8366 32.6665 16 32.6665C7.16344 32.6665 0 25.5031 0 16.6665Z"
+	                  fill="#3171F6"
                   ></path>
                   <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.0002 5.99984C10.1091 5.99984 5.3335 10.4556 5.3335 15.9522C5.3335 19.0351 6.83597 21.7903 9.19473 23.6158V27.3332L12.8261 25.4565C13.8287 25.7477 14.8948 25.9046 16.0002 25.9046C21.8912 25.9046 26.6668 21.4488 26.6668 15.9522C26.6668 10.4556 21.8912 5.99984 16.0002 5.99984ZM9.87701 18.0804C10.6612 18.0804 11.3932 18.0759 12.125 18.0821C12.5362 18.0856 12.7584 18.2607 12.7962 18.5845C12.8442 18.9944 12.605 19.2664 12.1609 19.2714C11.3233 19.2809 10.4855 19.275 9.64768 19.275C9.40587 19.275 9.16349 19.2835 8.92244 19.2696C8.62187 19.2523 8.32787 19.1928 8.18415 18.8827C8.04006 18.5719 8.14015 18.293 8.33911 18.04C9.13968 17.0219 9.9412 16.0047 10.7422 14.9869C10.7898 14.9265 10.8357 14.8648 10.882 14.8043C10.833 14.7159 10.7554 14.7555 10.6949 14.7551C10.1336 14.7516 9.57215 14.7556 9.01082 14.7511C8.88254 14.7501 8.75044 14.7398 8.62701 14.7074C8.36663 14.6391 8.20854 14.4307 8.20644 14.182C8.20434 13.9329 8.35768 13.722 8.61749 13.6487C8.74025 13.6141 8.87282 13.6021 9.00111 13.6016C9.9252 13.5978 10.8493 13.5981 11.7734 13.6011C11.9367 13.6016 12.1011 13.6058 12.2597 13.6606C12.6101 13.7815 12.7643 14.1045 12.6219 14.4465C12.4978 14.7442 12.3001 14.9973 12.1027 15.2486C11.4252 16.1108 10.7452 16.9709 10.0663 17.8322C10.0136 17.899 9.96292 17.9676 9.87701 18.0804ZM14.0567 17.2472C14.0617 17.4255 14.1205 17.6652 14.2747 17.8732C14.6102 18.3257 15.2984 18.3243 15.6337 17.8723C15.9242 17.4805 15.9227 16.8304 15.6319 16.4389C15.4782 16.2321 15.273 16.1238 15.0169 16.1087C14.4487 16.0753 14.0509 16.5148 14.0567 17.2472ZM15.8889 15.3525C16.0151 15.1936 16.1404 15.0439 16.3538 15.0005C16.7609 14.9174 17.147 15.182 17.1525 15.596C17.1661 16.6319 17.161 17.668 17.1549 18.7041C17.1532 18.987 16.9789 19.2039 16.7239 19.2906C16.4567 19.3814 16.1783 19.3152 15.9998 19.09C15.9124 18.9797 15.875 18.9607 15.7531 19.0596C15.2812 19.4422 14.7489 19.5091 14.1735 19.3225C13.2505 19.023 12.8705 18.3038 12.7703 17.4228C12.6626 16.4766 12.9776 15.6645 13.8246 15.1666C14.5277 14.7532 15.2421 14.788 15.8889 15.3525ZM20.7838 17.1508C20.7824 17.416 20.8448 17.6634 21.0047 17.8783C21.3324 18.3189 22.0136 18.3224 22.348 17.8879C22.6494 17.4962 22.6504 16.8305 22.353 16.4346C22.1979 16.2282 21.9918 16.1217 21.7364 16.1082C21.1766 16.0785 20.7862 16.5065 20.7838 17.1508ZM19.4806 17.276C19.4411 15.9452 20.3142 14.9509 21.556 14.9127C22.8756 14.8721 23.8436 15.7594 23.883 17.0529C23.9229 18.3626 23.1194 19.2917 21.8803 19.416C20.5341 19.5509 19.4614 18.57 19.4806 17.276ZM19.0266 16.2455C19.0266 17.0484 19.0306 17.8513 19.025 18.6542C19.0218 19.1134 18.6166 19.4239 18.1809 19.3139C17.9192 19.2479 17.7236 18.9703 17.7231 18.6468C17.7211 17.2741 17.7223 15.9014 17.7223 14.5287C17.7223 14.287 17.7189 14.0451 17.7231 13.8035C17.7301 13.4051 17.9837 13.1465 18.3649 13.1428C18.7586 13.1389 19.0226 13.3985 19.0252 13.811C19.0302 14.6225 19.0266 15.434 19.0266 16.2455Z"
-                      fill="white"
+	                  fill-rule="evenodd"
+	                  clip-rule="evenodd"
+	                  d="M16.0002 5.99984C10.1091 5.99984 5.3335 10.4556 5.3335 15.9522C5.3335 19.0351 6.83597 21.7903 9.19473 23.6158V27.3332L12.8261 25.4565C13.8287 25.7477 14.8948 25.9046 16.0002 25.9046C21.8912 25.9046 26.6668 21.4488 26.6668 15.9522C26.6668 10.4556 21.8912 5.99984 16.0002 5.99984ZM9.87701 18.0804C10.6612 18.0804 11.3932 18.0759 12.125 18.0821C12.5362 18.0856 12.7584 18.2607 12.7962 18.5845C12.8442 18.9944 12.605 19.2664 12.1609 19.2714C11.3233 19.2809 10.4855 19.275 9.64768 19.275C9.40587 19.275 9.16349 19.2835 8.92244 19.2696C8.62187 19.2523 8.32787 19.1928 8.18415 18.8827C8.04006 18.5719 8.14015 18.293 8.33911 18.04C9.13968 17.0219 9.9412 16.0047 10.7422 14.9869C10.7898 14.9265 10.8357 14.8648 10.882 14.8043C10.833 14.7159 10.7554 14.7555 10.6949 14.7551C10.1336 14.7516 9.57215 14.7556 9.01082 14.7511C8.88254 14.7501 8.75044 14.7398 8.62701 14.7074C8.36663 14.6391 8.20854 14.4307 8.20644 14.182C8.20434 13.9329 8.35768 13.722 8.61749 13.6487C8.74025 13.6141 8.87282 13.6021 9.00111 13.6016C9.9252 13.5978 10.8493 13.5981 11.7734 13.6011C11.9367 13.6016 12.1011 13.6058 12.2597 13.6606C12.6101 13.7815 12.7643 14.1045 12.6219 14.4465C12.4978 14.7442 12.3001 14.9973 12.1027 15.2486C11.4252 16.1108 10.7452 16.9709 10.0663 17.8322C10.0136 17.899 9.96292 17.9676 9.87701 18.0804ZM14.0567 17.2472C14.0617 17.4255 14.1205 17.6652 14.2747 17.8732C14.6102 18.3257 15.2984 18.3243 15.6337 17.8723C15.9242 17.4805 15.9227 16.8304 15.6319 16.4389C15.4782 16.2321 15.273 16.1238 15.0169 16.1087C14.4487 16.0753 14.0509 16.5148 14.0567 17.2472ZM15.8889 15.3525C16.0151 15.1936 16.1404 15.0439 16.3538 15.0005C16.7609 14.9174 17.147 15.182 17.1525 15.596C17.1661 16.6319 17.161 17.668 17.1549 18.7041C17.1532 18.987 16.9789 19.2039 16.7239 19.2906C16.4567 19.3814 16.1783 19.3152 15.9998 19.09C15.9124 18.9797 15.875 18.9607 15.7531 19.0596C15.2812 19.4422 14.7489 19.5091 14.1735 19.3225C13.2505 19.023 12.8705 18.3038 12.7703 17.4228C12.6626 16.4766 12.9776 15.6645 13.8246 15.1666C14.5277 14.7532 15.2421 14.788 15.8889 15.3525ZM20.7838 17.1508C20.7824 17.416 20.8448 17.6634 21.0047 17.8783C21.3324 18.3189 22.0136 18.3224 22.348 17.8879C22.6494 17.4962 22.6504 16.8305 22.353 16.4346C22.1979 16.2282 21.9918 16.1217 21.7364 16.1082C21.1766 16.0785 20.7862 16.5065 20.7838 17.1508ZM19.4806 17.276C19.4411 15.9452 20.3142 14.9509 21.556 14.9127C22.8756 14.8721 23.8436 15.7594 23.883 17.0529C23.9229 18.3626 23.1194 19.2917 21.8803 19.416C20.5341 19.5509 19.4614 18.57 19.4806 17.276ZM19.0266 16.2455C19.0266 17.0484 19.0306 17.8513 19.025 18.6542C19.0218 19.1134 18.6166 19.4239 18.1809 19.3139C17.9192 19.2479 17.7236 18.9703 17.7231 18.6468C17.7211 17.2741 17.7223 15.9014 17.7223 14.5287C17.7223 14.287 17.7189 14.0451 17.7231 13.8035C17.7301 13.4051 17.9837 13.1465 18.3649 13.1428C18.7586 13.1389 19.0226 13.3985 19.0252 13.811C19.0302 14.6225 19.0266 15.434 19.0266 16.2455Z"
+	                  fill="white"
                   ></path>
                 </svg>
               </span>
-                </div>
+				</div>
 
-                <h3 class="my-3 my-title">Tải ứng dụng trên điện thoại</h3>
-                <div class="d-flex">
-                    <img
-                        src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/qrcode.png"
-                        width="80"
-                        height="80"
-                        alt="tiki-qr"
-                    />
-                    <div
-                        class="d-flex flex-column justify-content-between align-items-center ms-2"
-                        style="height: 80px"
-                    >
-                        <a
-                            rel="nofollow noreferrer"
-                            href="https://itunes.apple.com/vn/app/id958100553"
-                            target="_blank"
-                            aria-label=""
-                            style="height: 36px"
-                        ><img
-                            src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png"
-                            width="122"
-                            alt="tiki-app-store"/></a
-                        ><a
-                        rel="nofollow noreferrer"
-                        href="https://play.google.com/store/apps/details?id=vn.tiki.app.tikiandroid"
-                        target="_blank"
-                        aria-label=""
-                        style="height: 36px"
-                    ><img
-                        src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png"
-                        width="122"
-                        alt="tiki-google-play"
-                    /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="divider my-2"></div>
-        <div class="row">
-            <div class="address">
-                <i class="tikicon icon-location"></i>
-                <div class="address-info">
-                    <p class="small-text">
-                        Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8,
-                        phường 12, quận 10, Thành phố Hồ Chí Minh
-                    </p>
-                    <p class="small-text">
-                        Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ
-                        mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý
-                        đơn hàng
-                    </p>
-                    <p class="small-text">
-                        Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch
-                        và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 06/01/2010 và
-                        sửa đổi lần thứ 23 ngày 14/02/2022
-                    </p>
-                    <p class="small-text" style="margin-bottom: 0">
-                        © 2022 - Bản quyền của Công ty TNHH Ti Ki
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+				<h3 class="my-3 my-title">Tải ứng dụng trên điện thoại</h3>
+				<div class="d-flex">
+					<img
+						src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/qrcode.png"
+						width="80"
+						height="80"
+						alt="tiki-qr"
+					/>
+					<div
+						class="d-flex flex-column justify-content-between align-items-center ms-2"
+						style="height: 80px"
+					>
+						<a
+							rel="nofollow noreferrer"
+							href="https://itunes.apple.com/vn/app/id958100553"
+							target="_blank"
+							aria-label=""
+							style="height: 36px"
+						><img
+							src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/appstore.png"
+							width="122"
+							alt="tiki-app-store"/></a
+						><a
+						rel="nofollow noreferrer"
+						href="https://play.google.com/store/apps/details?id=vn.tiki.app.tikiandroid"
+						target="_blank"
+						aria-label=""
+						style="height: 36px"
+					><img
+						src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/playstore.png"
+						width="122"
+						alt="tiki-google-play"
+					/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider my-2"></div>
+		<div class="row">
+			<div class="address">
+				<i class="tikicon icon-location"></i>
+				<div class="address-info">
+					<p class="small-text">
+						Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8,
+						phường 12, quận 10, Thành phố Hồ Chí Minh
+					</p>
+					<p class="small-text">
+						Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ
+						mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý
+						đơn hàng
+					</p>
+					<p class="small-text">
+						Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch
+						và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 06/01/2010 và
+						sửa đổi lần thứ 23 ngày 14/02/2022
+					</p>
+					<p class="small-text" style="margin-bottom: 0">
+						© 2022 - Bản quyền của Công ty TNHH Ti Ki
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </div>
 
 <!-- banner
@@ -955,84 +1058,96 @@
 <!-- script -->
 <!-- Modal login -->
 <div
-    class="modal fade"
-    id="login-modal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
+	class="modal fade"
+	id="login-modal"
+	tabindex="-1"
+	aria-labelledby="exampleModalLabel"
+	aria-hidden="true"
 >
-    <div class="modal-dialog" style="max-width: 800px">
-        <div class="modal-content rounded-4">
-            <div
-                class="modal-body bg-white d-flex rounded-4 position-relative p-0"
-            >
-                <button class="btn-close" data-bs-dismiss="modal">
-                    <img
-                        class="close-img"
-                        src="https://salt.tikicdn.com/ts/upload/fe/20/d7/6d7764292a847adcffa7251141eb4730.png"
-                        alt="icon"
-                    />
-                </button>
-                <div class="iwneWf">
-                    <div class="styles__StyledLoginWithPhone-sc-si1ros-0 jdahxv">
-                        <div class="heading">
-                            <h4>Xin chào,</h4>
-                            <p>Đăng nhập hoặc Tạo tài khoản</p>
-                        </div>
-                        <form>
-                            <div class="input">
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    placeholder="Số điện thoại"
-                                    maxlength="10"
-                                    value=""
-                                />
-                            </div>
-                            <button>Tiếp Tục</button>
-                        </form>
-                        <p class="login-with-email">Đăng nhập bằng email</p>
-                        <div class="ghIlRk">
-                            <p class="social-heading"><span>Hoặc tiếp tục bằng</span></p>
-                            <ul class="social__items">
-                                <li class="social__item">
-                                    <img
-                                        src="https://salt.tikicdn.com/ts/upload/3a/22/45/0f04dc6e4ed55fa62dcb305fd337db6c.png"
-                                        alt="facebook"
-                                    />
-                                </li>
-                                <li class="social__item">
-                                    <img
-                                        src="https://salt.tikicdn.com/ts/upload/1c/ac/e8/141c68302262747f5988df2aae7eb161.png"
-                                        alt="google"
-                                    />
-                                </li>
-                            </ul>
-                            <p class="note">
-                                Bằng việc tiếp tục, bạn đã đọc và đồng ý với
-                                <a href="#">điều khoản sử dụng</a>
-                                và
-                                <a href="#">Chính sách bảo mật thông tin cá nhân</a>
-                                của Tiki
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cxqVZX">
-                    <img
-                        src="https://salt.tikicdn.com/ts/upload/eb/f3/a3/25b2ccba8f33a5157f161b6a50f64a60.png"
-                        width="203"
-                    />
-                    <div class="content">
-                        <h4>Mua sắm tại Tiki</h4>
-                        <span>Siêu ưu đãi mỗi ngày</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="modal-dialog" style="max-width: 800px">
+		<div class="modal-content rounded-4">
+			<div
+				class="modal-body bg-white d-flex rounded-4 position-relative p-0"
+			>
+				<button class="btn-close" data-bs-dismiss="modal">
+					<img
+						class="close-img"
+						src="https://salt.tikicdn.com/ts/upload/fe/20/d7/6d7764292a847adcffa7251141eb4730.png"
+						alt="icon"
+					/>
+				</button>
+				<div class="iwneWf">
+					<div class="styles__StyledLoginWithPhone-sc-si1ros-0 jdahxv">
+						<div class="heading">
+							<h4>Xin chào,</h4>
+							<p>Đăng nhập hoặc Tạo tài khoản</p>
+						</div>
+						<form>
+							<div class="input">
+								<input
+									type="tel"
+									name="tel"
+									placeholder="Số điện thoại"
+									maxlength="10"
+									value=""
+								/>
+							</div>
+							<button>Tiếp Tục</button>
+						</form>
+						<p class="login-with-email">Đăng nhập bằng email</p>
+						<div class="ghIlRk">
+							<p class="social-heading"><span>Hoặc tiếp tục bằng</span></p>
+							<ul class="social__items">
+								<li class="social__item">
+									<img
+										src="https://salt.tikicdn.com/ts/upload/3a/22/45/0f04dc6e4ed55fa62dcb305fd337db6c.png"
+										alt="facebook"
+									/>
+								</li>
+								<li class="social__item">
+									<img
+										src="https://salt.tikicdn.com/ts/upload/1c/ac/e8/141c68302262747f5988df2aae7eb161.png"
+										alt="google"
+									/>
+								</li>
+							</ul>
+							<p class="note">
+								Bằng việc tiếp tục, bạn đã đọc và đồng ý với
+								<a href="#">điều khoản sử dụng</a>
+								và
+								<a href="#">Chính sách bảo mật thông tin cá nhân</a>
+								của Tiki
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="cxqVZX">
+					<img
+						src="https://salt.tikicdn.com/ts/upload/eb/f3/a3/25b2ccba8f33a5157f161b6a50f64a60.png"
+						width="203"
+					/>
+					<div class="content">
+						<h4>Mua sắm tại Tiki</h4>
+						<span>Siêu ưu đãi mỗi ngày</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+     tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content overflow-hidden">
+			<div class="ratio-16x9 p-2">
+				<img class="w-100 h-100 object-fit-cover" src="../static/image/payment-successful.avif" alt="payment">
+			</div>
+			<p class="mt-3 text-center fw-bold" style="font-size: 20px"> Thanh toán thành công!</p>
+		</div>
+	</div>
 </div>
 <!-- end modal login -->
+<script src="../lib/popper/index.js"></script>
 <script src="../lib/ui/js/bootstrap.js"></script>
 <script src="../lib/ui/js/bootstrap.bundle.min.js"></script>
 <script src="../lib/ui/js/bootstrap.min.js"></script>
