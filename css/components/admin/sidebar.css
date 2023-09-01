@@ -35,7 +35,7 @@
     color: rgb(74, 74, 74);
 }
 .my__sidebar-account a:hover ,.my__sidebar-account a.is-active {
-    background-color: rgb(235, 235, 240);
+    background-color:rgb(213 213 217);
     color: rgb(0, 0, 0);
 }
 .my__sidebar-account a {
