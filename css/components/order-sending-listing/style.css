@@ -1,0 +1,12 @@
+.table-order table thead tr th {
+	background-color: rgba(119, 169, 255, 0.64);
+	text-align: center;
+	font-weight: 500;
+}
+.table-order table tbody tr td {
+	font-size: 14px;
+}
+.button-search-order {
+	background-color: #77a9ff;
+	color: white;
+}
