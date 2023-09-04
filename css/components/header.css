@@ -27,8 +27,11 @@
 	background-color: rgba(64, 137, 255, 0.729);
 	color: white;
 }
+#button-addon2 {
+	border: 1px solid #dee2e6;
+}
 
-#search-bar:focus + #button-addon2 {
+#search-bar:focus + #button-addon2{
 	border-color: #86b7fe;
 	border-left: 0px;
 }
