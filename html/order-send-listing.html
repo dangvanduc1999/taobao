@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="../css/components/footer.css"/>
 	<link rel="stylesheet" href="../css/components/modal-login.css"/>
 	<link rel="stylesheet" href="../css/components/order-sending-listing/style.css">
+	<link rel="stylesheet" href="../css/components/admin/sidebar.css">
 </head>
 <body>
 <!-- header -->
@@ -283,339 +284,668 @@
 		</div>
 	</div>
 </div>
-<section class="bg-white pt-3 py-5 border-top  ">
+<section class=" pt-3 py-5 mt-3 ">
 	<div class="container">
-		<div class="row filter-option mb-3 px-3 ">
-			<div class="col-lg-4 mb-3 col-md-6 col-12">
-				<div class="w-100 d-flex">
-					<select class="form-select me-2" aria-label="Default select example">
-						<option selected>Chọn trạng thái</option>
-						<option value="1">Chờ đặt cọc</option>
-						<option value="2">Đã đặt cọc</option>
-						<option value="3">Đang mua hàng</option>
-						<option value="3">Chờ mua hàng</option>
-						<option value="3">Đã thanh toán</option>
-						<option value="3">Chờ giao hàng</option>
-					</select>
-					<select class="form-select" aria-label="Default select example">
-						<option selected>Chọn website</option>
-						<option value="1">1688.com</option>
-						<option value="2">taobao.com</option>
-					</select>
-				</div>
+		<div class="row">
+			<div class="col-lg-3 d-lg-block d-none">
+				<aside class="my-sidebar">
+					<div class="my__sidebar-logo">
+						<img
+							src="https://lh3.googleusercontent.com/-VDTg2rLk8Cs/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcb1bhGTX56jCLWn6gE-Fo-At2Y41Q/mo/photo.jpg"
+							alt="avatar"/>
+						<div class="info">Tài khoản của<strong>Đặng Văn đức</strong></div>
+					</div>
+					<ul class="my__sidebar-account  ">
+						<li>
+							<a class="" href="/customer/account/edit">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								     viewBox="0 0 24 24" height="1em" width="1em"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+								</svg>
+								<span>Thông tin tài khoản</span>
+							</a>
+						</li>
+						<li>
+							<a class="" href="/customer/notification">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								     viewBox="0 0 24 24" height="1em" width="1em"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path>
+								</svg>
+								<span>Thông báo của tôi</span>
+							</a>
+						</li>
+						<li>
+							<a class="" href="status-order.html">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								     viewBox="0 0 24 24" height="1em" width="1em"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+								</svg>
+								<span>Quản lý đơn hàng</span>
+							</a>
+						</li>
+						<li>
+							<a class="is-active" href="create-form.html">
+								<img class="icon"
+								     src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/order_return.svg"/>
+								<span>Tạo đơn và ký gửi</span>
+							</a>
+						</li>
+						<li>
+							<a class="" href="/customer/address">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								     viewBox="0 0 24 24" height="1em" width="1em"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+								</svg>
+								<span>Sổ địa chỉ</span>
+							</a>
+						</li>
+						<li>
+							<a class="" href="/customer/paymentcard">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								     viewBox="0 0 24 24" height="1em" width="1em"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path>
+								</svg>
+								<span>Thông tin thanh toán </span>
+							</a>
+						</li>
+						<li>
+							<a class="" href="/review-hub">
+								<img class="icon"
+								     src="https://frontend.tikicdn.com/_desktop-next/static/img/account/reviewhub.png"/>
+								<span>Đánh giá sản phẩm</span></a>
+						</li>
+						<li>
+							<a href="/danh-rieng-cho-ban">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								     viewBox="0 0 24 24" height="1em" width="1em"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path>
+								</svg>
+								<span>Sản phẩm bạn đã xem</span>
+							</a>
+						</li>
+						<li>
+							<a class="" href="/customer/wishlist">
+								<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+								     viewBox="0 0 24 24" height="1em" width="1em"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+								</svg>
+								<span>Sản phẩm yêu thích</span>
+							</a>
+						</li>
+						<li><a class="" href="/customer/review">
+							<svg stroke="currentColor" fill="currentColor" stroke-width="0"
+							     viewBox="0 0 24 24" height="1em" width="1em"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+							</svg>
+							<span>Nhận xét của tôi</span></a></li>
+						<li>
+							<a href="/astra-rewards/home">
+								<img class="icon"
+								     src="https://salt.tikicdn.com/ts/ta/50/d3/26/9fa51b04c04851fbe4025c1c9f3111c7.png">
+								<div class="group-info">
+									<span>Astra Rewards</span>
+									<span
+										style="color: rgb(128, 128, 137);">Bạn là <b
+										style="color: rgb(39, 39, 42);">Khách hàng</b>
+                            </span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="" href="/chia-se-co-loi">
+								<img class="icon"
+								     src="https://frontend.tikicdn.com/_desktop-next/static/img/share-to-earn/icon-s2e.svg"/>
+								<span>Chia sẻ có lời</span>
+							</a>
+						</li>
+						<li>
+							<a href="/bao-hiem-so/hop-dong?source_screen=my_account">
+								<img class="icon"
+								     alt="insurance icon"
+								     src="https://frontend.tikicdn.com/_desktop-next/static/img/account/insurance.png"/>
+								<span>Hợp đồng bảo hiểm</span>
+							</a>
+						</li>
+						<li>
+							<a class="" href="/mua-truoc-tra-sau/dang-ky">
+								<img class="icon"
+								     src="https://salt.tikicdn.com/ts/tmp/95/15/2d/4b3d64b220f55f42885c86ac439d6d62.png"/>
+								<span>Mua trước trả sau</span>
+							</a>
+						</li>
+
+					</ul>
+				</aside>
 			</div>
-			<div class=" col-lg-4 mb-3 col-md-6 col-12">
-				<div class="row">
-					<div class="col-md-6 mb-md-0 mb-3">
-						<input type="date" class="form-control" id="startDate"/>
-					</div>
-					<div class="col-md-6">
-						<input type="date" class="form-control" id="endDate"/>
+			<div class="col-lg-9 col-12 bg-white rounded-3 py-3 ">
+				<div class="row mb-3">
+					<div class="col-12">
+						<div class="w-100 d-flex justify-content-between">
+							<p class=" fw-bold mb-2 fs-5">Danh sách đơn ký gửi</p>
+							<div class="form-create__title ">
+								<button class="btn btn-primary ms-auto d-block d-sm-block d-md-block d-lg-none"
+								        type="button" data-bs-toggle="offcanvas"
+								        data-bs-target="#sidebar    " aria-controls="sidebar">
+									<i class="ri-bar-chart-horizontal-fill"></i>
+								</button>
+								<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"
+								     aria-labelledby="sidebarLabel">
+									<div class="offcanvas-header">
+										<h5 class="offcanvas-title" id="sidebarLabel"></h5>
+										<button type="button" class="btn-close text-reset"
+										        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+									</div>
+									<div class="offcanvas-body">
+										<div>
+											<aside class="my-sidebar">
+												<div class="my__sidebar-logo">
+													<img
+														src="https://lh3.googleusercontent.com/-VDTg2rLk8Cs/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcb1bhGTX56jCLWn6gE-Fo-At2Y41Q/mo/photo.jpg"
+														alt="avatar"/>
+													<div class="info">Tài khoản của<strong>Đặng Văn đức</strong>
+													</div>
+												</div>
+												<ul class="my__sidebar-account  ">
+													<li>
+														<a class="" href="/customer/account/edit"
+														   data-bs-dismiss="offcanvas" aria-label="Close">
+															<svg stroke="currentColor" fill="currentColor"
+															     stroke-width="0"
+															     viewBox="0 0 24 24" height="1em" width="1em"
+															     xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+															</svg>
+															<span>Thông tin tài khoản</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="" href="/customer/notification">
+															<svg stroke="currentColor" fill="currentColor"
+															     stroke-width="0"
+															     viewBox="0 0 24 24" height="1em" width="1em"
+															     xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path>
+															</svg>
+															<span>Thông báo của tôi</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="" href="status-order.html">
+															<svg stroke="currentColor" fill="currentColor"
+															     stroke-width="0"
+															     viewBox="0 0 24 24" height="1em" width="1em"
+															     xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path>
+															</svg>
+															<span>Quản lý đơn hàng</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="is-active" href="create-form.html">
+															<img class="icon"
+															     src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/order_return.svg"/>
+															<span>Tạo đơn và ký gửi</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="" href="/customer/address">
+															<svg stroke="currentColor" fill="currentColor"
+															     stroke-width="0"
+															     viewBox="0 0 24 24" height="1em" width="1em"
+															     xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+															</svg>
+															<span>Sổ địa chỉ</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="" href="/customer/paymentcard">
+															<svg stroke="currentColor" fill="currentColor"
+															     stroke-width="0"
+															     viewBox="0 0 24 24" height="1em" width="1em"
+															     xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path>
+															</svg>
+															<span>Thông tin thanh toán </span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="" href="/review-hub">
+															<img class="icon"
+															     src="https://frontend.tikicdn.com/_desktop-next/static/img/account/reviewhub.png"/>
+															<span>Đánh giá sản phẩm</span></a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a href="/danh-rieng-cho-ban">
+															<svg stroke="currentColor" fill="currentColor"
+															     stroke-width="0"
+															     viewBox="0 0 24 24" height="1em" width="1em"
+															     xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path>
+															</svg>
+															<span>Sản phẩm bạn đã xem</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="" href="/customer/wishlist">
+															<svg stroke="currentColor" fill="currentColor"
+															     stroke-width="0"
+															     viewBox="0 0 24 24" height="1em" width="1em"
+															     xmlns="http://www.w3.org/2000/svg">
+																<path
+																	d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+															</svg>
+															<span>Sản phẩm yêu thích</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close"><a class=""
+													                                                      href="/customer/review">
+														<svg stroke="currentColor" fill="currentColor"
+														     stroke-width="0"
+														     viewBox="0 0 24 24" height="1em" width="1em"
+														     xmlns="http://www.w3.org/2000/svg">
+															<path
+																d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path>
+														</svg>
+														<span>Nhận xét của tôi</span></a></li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a href="/astra-rewards/home">
+															<img class="icon"
+															     src="https://salt.tikicdn.com/ts/ta/50/d3/26/9fa51b04c04851fbe4025c1c9f3111c7.png">
+															<div class="group-info">
+																<span>Astra Rewards</span>
+																<span
+																	style="color: rgb(128, 128, 137);">Bạn là <b
+																	style="color: rgb(39, 39, 42);">Khách hàng</b>
+                            </span>
+															</div>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="" href="/chia-se-co-loi">
+															<img class="icon"
+															     src="https://frontend.tikicdn.com/_desktop-next/static/img/share-to-earn/icon-s2e.svg"/>
+															<span>Chia sẻ có lời</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a href="/bao-hiem-so/hop-dong?source_screen=my_account">
+															<img class="icon"
+															     alt="insurance icon"
+															     src="https://frontend.tikicdn.com/_desktop-next/static/img/account/insurance.png"/>
+															<span>Hợp đồng bảo hiểm</span>
+														</a>
+													</li>
+													<li data-bs-dismiss="offcanvas" aria-label="Close">
+														<a class="" href="/mua-truoc-tra-sau/dang-ky">
+															<img class="icon"
+															     src="https://salt.tikicdn.com/ts/tmp/95/15/2d/4b3d64b220f55f42885c86ac439d6d62.png"/>
+															<span>Mua trước trả sau</span>
+														</a>
+													</li>
+												</ul>
+											</aside>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class=" col-lg-4 col-md-12 col-12">
-				<div class="input-group flex-nowrap w-100" style="height: 38px">
-					<div class="input-group-text px-0" id="addon-wrapping">
-						<select class="form-select" aria-label="Default select example">
-							<option selected>Tìm theo</option>
-							<option value="1">Tất cả</option>
-							<option value="2">Mã đơn hàng</option>
-							<option value="3">Ghi chú</option>
-						</select>
+				<div class="row filter-option mb-3  ">
+					<div class="col-lg-6 mb-3 col-md-6 col-12">
+						<div class="row">
+							<div class="col-md-6 mb-md-0 mb-3">
+								<select class="form-select me-2" aria-label="Default select example">
+									<option selected>Chọn trạng thái</option>
+									<option value="1">Chờ đặt cọc</option>
+									<option value="2">Đã đặt cọc</option>
+									<option value="3">Đang mua hàng</option>
+									<option value="3">Chờ mua hàng</option>
+									<option value="3">Đã thanh toán</option>
+									<option value="3">Chờ giao hàng</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Chọn website</option>
+									<option value="1">1688.com</option>
+									<option value="2">taobao.com</option>
+								</select>
+							</div>
+						</div>
 					</div>
-					<input type="text" class="form-control" placeholder="Nhập từ khoá" aria-label="Username"
-					       aria-describedby="addon-wrapping">
-					<span class="input-group-text button-search-order">
+					<div class=" col-lg-6 mb-3 col-md-6 col-12">
+						<div class="row">
+							<div class="col-md-6 mb-md-0 mb-3">
+								<input type="date" class="form-control" id="startDate"/>
+							</div>
+							<div class="col-md-6">
+								<input type="date" class="form-control" id="endDate"/>
+							</div>
+						</div>
+					</div>
+					<div class=" col-lg-12 col-md-12 col-12 d-flex">
+						<div class="input-group flex-nowrap w-100" style="height: 38px ; flex: 1">
+							<div class="input-group-text px-0" id="addon-wrapping">
+								<select class="form-select border-0" aria-label="Default select example">
+									<option selected>Tìm theo</option>
+									<option value="1">Tất cả</option>
+									<option value="2">Mã đơn hàng</option>
+									<option value="3">Ghi chú</option>
+								</select>
+							</div>
+							<input type="text" class="form-control" placeholder="Nhập từ khoá" aria-label="Username"
+							       aria-describedby="addon-wrapping">
+							<span class="input-group-text button-search-order">
 						<i class="ri-search-line"></i>
 					</span>
-				</div>
-			</div>
-		</div>
-		<div class="row mb-3">
-			<div class="col-12">
-				<div class="px-3 w-100 d-flex flex-row-reverse">
-					<button type="button" class="btn btn-primary ">Tạo đơn ký gửi</button>
-					<button type="button" class="btn btn-primary me-2" id="liveToastBtn">Show live toast</button>
-					<button type="button" class="btn btn-danger me-2" id="error">Show live toast error</button>
-					<button type="button" class="btn btn-danger me-2" disabled>disable</button>
-
-				</div>
-			</div>
-		</div>
-		<div class="row table-order">
-			<div class="col-12 overflow-auto">
-				<div class="w-100 px-3" style="min-width: 1160px;">
-					<table class="table table-bordered rounded-1 shadow-sm">
-						<thead class="rounded-1 overflow-hidden">
-						<tr class="rounded-1">
-							<th class="py-3" scope="col">stt</th>
-							<th class="py-3" scope="col">Đơn hàng</th>
-							<th class="py-3" scope="col" >Thông tin đơn
-								hàng
-							</th>
-							<th class="py-3" scope="col" style="width: 20%">Chi phí (VNĐ)</th>
-							<th class="py-3" scope="col">Thanh toán</th>
-							<th class="py-3" scope="col">Lịch sử trạng thái</th>
-							<th class="py-3" scope="col">Thao tác</th>
-						</tr>
-						</thead>
-						<tbody>
-						<tr>
-							<th class="text-center" scope="row">1</th>
-							<td>
-								<div class="d-flex flex-column align-items-center">
-									<div class="p-1 mb-2 bg-primary d-inline-block w-auto text-center text-white">
-										ký gửi
-									</div>
-									<p class="text-danger">
-										chịu thuế
-									</p>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column align-items-center">
-									<div class="p-1 fw-bold text-primary">
-										<a href="#" class="text-decoration-none fw-bold">
-											D5737_C1
-										</a>
-									</div>
-									<p class="fw-bold">
-										Nhà cung cấp giao
-									</p>
-								</div>
-							</td>
-							<td class="p-1">
-								<div class="d-flex flex-column ">
-									<div class="p-1 d-flex align-items-center justify-content-between   mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between  mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column ">
-									<div class="p-1    mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0">gia tri don hang</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1     mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0">thanh toan:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column ">
-									<div class="p-1  mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0 fw-bold">Nha cung cap giao</p>
-										<p class="mb-0">03/09/23 09:35:12</p>
-									</div>
-								</div>
-							</td>
-							<td class="text-center">
-								<button type="button" class="btn btn-primary ">
-									<i class="ri-eye-line"></i>
-									Chi tiet
-								</button>
-							</td>
-
-						</tr>
-						<tr>
-							<th class="text-center" scope="row">1</th>
-							<td>
-								<div class="d-flex flex-column align-items-center">
-									<div class="p-1 mb-2 bg-primary d-inline-block w-auto text-center text-white">
-										ký gửi
-									</div>
-									<p class="text-danger">
-										chịu thuế
-									</p>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column align-items-center">
-									<div class="p-1 fw-bold text-primary">
-										<a href="#" class="text-decoration-none fw-bold">
-											D5737_C1
-										</a>
-									</div>
-									<p class="fw-bold">
-										Nhà cung cấp giao
-									</p>
-								</div>
-							</td>
-							<td class="p-1">
-								<div class="d-flex flex-column ">
-									<div class="p-1 d-flex align-items-center justify-content-between   mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between  mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column ">
-									<div class="p-1    mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0">gia tri don hang</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1     mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0">thanh toan:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column ">
-									<div class="p-1  mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0 fw-bold">Nha cung cap giao</p>
-										<p class="mb-0">03/09/23 09:35:12</p>
-									</div>
-								</div>
-							</td>
-							<td class="text-center">
-								<button type="button" class="btn btn-primary ">
-									<i class="ri-eye-line"></i>
-									Chi tiet
-								</button>
-							</td>
-
-						</tr>
-						<tr>
-							<th class="text-center" scope="row">1</th>
-							<td>
-								<div class="d-flex flex-column align-items-center">
-									<div class="p-1 mb-2 bg-primary d-inline-block w-auto text-center text-white">
-										ký gửi
-									</div>
-									<p class="text-danger">
-										chịu thuế
-									</p>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column align-items-center">
-									<div class="p-1 fw-bold text-primary">
-										<a href="#" class="text-decoration-none fw-bold">
-											D5737_C1
-										</a>
-									</div>
-									<p class="fw-bold">
-										Nhà cung cấp giao
-									</p>
-								</div>
-							</td>
-							<td class="p-1">
-								<div class="d-flex flex-column ">
-									<div class="p-1 d-flex align-items-center justify-content-between   mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between  mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1 d-flex align-items-center justify-content-between mb-2">
-										<p class="mb-0">Tien VCND:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column ">
-									<div class="p-1    mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0">gia tri don hang</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-									<div class="p-1     mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0">thanh toan:</p>
-										<p class="mb-0 fw-bold">0</p>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="d-flex flex-column ">
-									<div class="p-1  mb-2 d-flex align-items-center justify-content-between">
-										<p class="mb-0 fw-bold">Nha cung cap giao</p>
-										<p class="mb-0">03/09/23 09:35:12</p>
-									</div>
-								</div>
-							</td>
-							<td class="text-center">
-								<button type="button" class="btn btn-primary ">
-									<i class="ri-eye-line"></i>
-									Chi tiet
-								</button>
-							</td>
-
-						</tr>
-						</tbody>
-					</table>
-
-				</div>
-			</div>
-			<div class="col-12">
-				<div class="d-flex justify-content-between align-items-center px-3">
-					<p class="mb-0">Hiển thị 1 đến 0 của 0 bản ghi</p>
-					<div class="d-flex align-items-center">
-						<div class="d-flex align-items-center me-2">
-							<p class="text-nowrap mb-0">Số bản ghi trên trang :</p>
-							<select class="form-select">
-								<option value="1" selected>5</option>
-								<option value="2">10</option>
-								<option value="3">20</option>
-							</select>
 						</div>
-						<div class="d-flex me-2 align-items-center ">
-							<p class="text-nowrap mb-0">Trang hiện tại:</p>
-							<input type="number" value="1" style="width: 50px" class="border py-1 rounded-1 px-2"/>
-							<span>/0</span>
+						<button type="button" class="btn btn-primary ms-3 ">Tạo đơn ký gửi</button>
+					</div>
+				</div>
+				<div class="row table-order">
+					<div class="col-12 overflow-auto">
+						<div class="w-100" style="min-width: 900px; width: 100%">
+							<table class="table table-bordered rounded-1 shadow-sm">
+								<thead class="rounded-1 overflow-hidden">
+								<tr class="rounded-1">
+									<th class="py-3" scope="col">stt</th>
+									<th class="py-3" scope="col">Đơn hàng</th>
+									<th class="py-3" scope="col">Thông tin đơn
+										hàng
+									</th>
+									<th class="py-3" scope="col" style="width: 20%">Chi phí (VNĐ)</th>
+									<th class="py-3" scope="col">Thanh toán</th>
+									<th class="py-3" scope="col">Lịch sử trạng thái</th>
+									<th class="py-3" scope="col">Thao tác</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th class="text-center" scope="row">1</th>
+									<td>
+										<div class="d-flex flex-column align-items-center">
+											<div
+												class="p-1 mb-2 bg-primary d-inline-block w-auto text-center text-white">
+												ký gửi
+											</div>
+											<p class="text-danger">
+												chịu thuế
+											</p>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column align-items-center">
+											<div class="p-1 fw-bold text-primary">
+												<a href="#" class="text-decoration-none fw-bold">
+													D5737_C1
+												</a>
+											</div>
+											<p class="fw-bold">
+												Nhà cung cấp giao
+											</p>
+										</div>
+									</td>
+									<td class="p-1">
+										<div class="d-flex flex-column ">
+											<div class="p-1 d-flex align-items-center justify-content-between   mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between  mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column ">
+											<div class="p-1    mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0">gia tri don hang</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1     mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0">thanh toan:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column ">
+											<div class="p-1  mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0 fw-bold">Nha cung cap giao</p>
+												<p class="mb-0">03/09/23 09:35:12</p>
+											</div>
+										</div>
+									</td>
+									<td class="text-center">
+										<button type="button" class="btn btn-primary ">
+											<i class="ri-eye-line"></i>
+											Chi tiet
+										</button>
+									</td>
+
+								</tr>
+								<tr>
+									<th class="text-center" scope="row">1</th>
+									<td>
+										<div class="d-flex flex-column align-items-center">
+											<div
+												class="p-1 mb-2 bg-primary d-inline-block w-auto text-center text-white">
+												ký gửi
+											</div>
+											<p class="text-danger">
+												chịu thuế
+											</p>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column align-items-center">
+											<div class="p-1 fw-bold text-primary">
+												<a href="#" class="text-decoration-none fw-bold">
+													D5737_C1
+												</a>
+											</div>
+											<p class="fw-bold">
+												Nhà cung cấp giao
+											</p>
+										</div>
+									</td>
+									<td class="p-1">
+										<div class="d-flex flex-column ">
+											<div class="p-1 d-flex align-items-center justify-content-between   mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between  mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column ">
+											<div class="p-1    mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0">gia tri don hang</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1     mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0">thanh toan:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column ">
+											<div class="p-1  mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0 fw-bold">Nha cung cap giao</p>
+												<p class="mb-0 text-nowrap">03/09/23 09:35:12</p>
+											</div>
+										</div>
+									</td>
+									<td class="text-center">
+										<button type="button" class="btn btn-primary ">
+											<i class="ri-eye-line"></i>
+											Chi tiet
+										</button>
+									</td>
+
+								</tr>
+								<tr>
+									<th class="text-center" scope="row">1</th>
+									<td>
+										<div class="d-flex flex-column align-items-center">
+											<div
+												class="p-1 mb-2 bg-primary d-inline-block w-auto text-center text-white">
+												ký gửi
+											</div>
+											<p class="text-danger">
+												chịu thuế
+											</p>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column align-items-center">
+											<div class="p-1 fw-bold text-primary">
+												<a href="#" class="text-decoration-none fw-bold">
+													D5737_C1
+												</a>
+											</div>
+											<p class="fw-bold">
+												Nhà cung cấp giao
+											</p>
+										</div>
+									</td>
+									<td class="p-1">
+										<div class="d-flex flex-column ">
+											<div class="p-1 d-flex align-items-center justify-content-between   mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between  mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1 d-flex align-items-center justify-content-between mb-2">
+												<p class="mb-0">Tien VCND:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column ">
+											<div class="p-1    mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0">gia tri don hang</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+											<div class="p-1     mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0">thanh toan:</p>
+												<p class="mb-0 fw-bold">0</p>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="d-flex flex-column ">
+											<div class="p-1  mb-2 d-flex align-items-center justify-content-between">
+												<p class="mb-0 fw-bold">Nha cung cap giao</p>
+												<p class="mb-0">03/09/23 09:35:12</p>
+											</div>
+										</div>
+									</td>
+									<td class="text-center">
+										<button type="button" class="btn btn-primary ">
+											<i class="ri-eye-line"></i>
+											Chi tiet
+										</button>
+									</td>
+
+								</tr>
+								</tbody>
+							</table>
+
 						</div>
-						<nav aria-label="Page navigation example">
-							<ul class="pagination mb-0">
-								<li class="page-item">
-									<a class="page-link" href="#" aria-label="Previous">
-										<span aria-hidden="true">&laquo;</span>
-									</a>
-								</li>
-								<li class="page-item"><a class="page-link" href="#">1</a></li>
-								<li class="page-item"><a class="page-link" href="#">2</a></li>
-								<li class="page-item"><a class="page-link" href="#">3</a></li>
-								<li class="page-item">
-									<a class="page-link" href="#" aria-label="Next">
-										<span aria-hidden="true">&raquo;</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
+					</div>
+					<div class="col-12">
+						<div class="d-flex flex-column flex-md-row justify-content-between align-items-center ">
+							<p class="mb-0 d-none d-md-block">Hiển thị 1 đến 0 của 0 bản ghi</p>
+							<div class="d-flex align-items-center flex-column flex-md-row">
+								<div class="d-flex align-items-center me-2 mb-3 mb-md-0">
+									<p class="text-nowrap mb-0">Số bản ghi trên trang :</p>
+									<select class="form-select">
+										<option value="1" selected>5</option>
+										<option value="2">10</option>
+										<option value="3">20</option>
+									</select>
+								</div>
+								<div class="d-flex me-2 align-items-center mb-3 mb-md-0 ">
+									<p class="text-nowrap mb-0">Trang hiện tại:</p>
+									<input type="number" value="1" style="width: 50px"
+									       class="border py-1 rounded-1 px-2"/>
+									<span>/0</span>
+								</div>
+								<nav aria-label="Page navigation example">
+									<ul class="pagination mb-0">
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Previous">
+												<span aria-hidden="true">&laquo;</span>
+											</a>
+										</li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
