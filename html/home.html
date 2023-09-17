@@ -251,18 +251,14 @@
 		<div class="row justify-content-center pb-4">
 			<div class="col-8  flex justify-content-center">
 				<div class="me-5 flex-grow-1  d-none d-lg-block" style="flex: 1">
-					<ul class="nav nav-tabs border-bottom-0 d-flex justify-content-center">
-						<li class="nav-item active">
-							<a class="nav-link active" aria-current="page" href="#">Tao bao</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="#">1988</a>
-						</li>
-					</ul>
+
 					<div class="input-group me-5 flex-grow-1" style="flex: 1">
-                            <span class="input-group-text">
-                                <i class="ri-search-line"></i>
-                            </span>
+						<div id="header-select" class="input-group-text p-0">
+							<select class="form-select border-0 header-search-option" aria-label="Default select example">
+								<option selected>Tao bao</option>
+								<option value="1">1988</option>
+							</select>
+						</div>
 						<input
 							type="text"
 							id="search-bar"
@@ -271,6 +267,7 @@
 							aria-label="Recipient's username"
 							aria-describedby="button-addon2"
 						/>
+
 						<a href="product-listing.html"
 						   class="btn btn-outline-secondary"
 						   type="button"
@@ -278,6 +275,7 @@
 						>
 							Tìm kiếm
 						</a>
+
 					</div>
 				</div>
 			</div>
@@ -286,7 +284,7 @@
 </div>
 
 <div class="my-banner">
-	<div id="carouselExample" class="carousel h-100 slide">
+	<div id="carouselExample" class="carousel h-100 slide" data-bs-ride="carousel">
 		<div class="carousel-inner h-100">
 			<div class="carousel-item active h-100 position-relative">
 				<img
@@ -1147,6 +1145,7 @@
 	</div>
 </div>
 <!-- end modal login -->
+<script src="../js/header.js"></script>
 <script src="../lib/popper/index.js"></script>
 <script src="../lib/ui/js/bootstrap.js"></script>
 <script src="../lib/swipper/swipper.js"></script>
