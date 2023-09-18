@@ -2,9 +2,13 @@
 	background-color: rgba(119, 169, 255, 0.64);
 	text-align: center;
 	font-weight: 500;
+	font-size: 13px;
 }
 .table-order table tbody tr td {
-	font-size: 14px;
+	font-size: 12px;
+}
+.table-order table tbody tr td .btn {
+	font-size: 12px;
 }
 .button-search-order {
 	background-color: #77a9ff;

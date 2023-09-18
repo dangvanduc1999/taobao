@@ -38,6 +38,12 @@
 .dropdown-item:hover {
 	background-color: #dce3ea;
 }
+.header-search-option:focus{
+	box-shadow: none;
+}
+.input-focused {
+	border: 0.5px solid #86b7fe ;
+}
 
 @media screen and (max-width: 1135px) {
 	header a span {
