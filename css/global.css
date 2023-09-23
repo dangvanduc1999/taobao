@@ -68,9 +68,9 @@ body {
 	animation: wave-squares 2s infinite ease-out;
 }
 
-.btn:disabled {
+.btn:disabled, .btn.disabled {
 	pointer-events: auto !important;
-	cursor: not-allowed;
+	cursor: not-allowed !important;
 }
 
 @keyframes wave-lines {
