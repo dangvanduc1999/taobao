@@ -1,0 +1,195 @@
+.newestPosts_post-item__dJwY5 {
+	margin-bottom: 30px;
+	background: #fff;
+	border: 1px solid #e6e5e5;
+	border-radius: 5px;
+	overflow: hidden;
+	padding-bottom: 28px;
+	height: calc(100% - 30px);
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-thumb__9vWnL {
+	position: relative;
+	border-bottom: 2px solid #0fd186;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-thumb__9vWnL .newestPosts_img-thumb__WuwPI {
+	height: 197px;
+	overflow: hidden;
+	display: block;
+	background-color: #aaa;
+	position: relative;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-thumb__9vWnL .newestPosts_img-thumb__WuwPI img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-thumb__9vWnL .newestPosts_post-categories__8k_uS {
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	bottom: -12px;
+	left: 25px;
+	font-size: 13px;
+	color: #fff;
+	background: #0fd186;
+	padding: 2px 15px;
+	border-radius: 4px;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-thumb__9vWnL .newestPosts_post-categories__8k_uS a {
+	color: inherit;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-info__7jqKN {
+	font-size: 13px;
+	color: #aaa;
+	padding: 30px 25px 15px;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-info__7jqKN span {
+	display: flex;
+	align-items: center;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-info__7jqKN span svg {
+	width: 13px;
+	height: 13px;
+	margin-right: 5px;
+	fill: #aaa;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_post-info__7jqKN span svg {
+	width: 13px;
+	height: 13px;
+	margin-right: 5px;
+	fill: #aaa;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_summary__kR5yV {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_summary__kR5yV p {
+	padding: 0 25px;
+	font-size: 13px;
+	display: block;
+	margin-bottom: 0;
+}
+
+.newestPosts_post-item__dJwY5 .newestPosts_title__oG_PX {
+	font-size: 20px;
+	font-weight: 700;
+	color: #3e3d3c;
+	padding: 0 25px;
+	margin-bottom: 20px;
+	max-height: 84px;
+	line-height: 28px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: break-word;
+}
+
+.bannerHeader_banner-header__6Zpui.bannerHeader_tin-tuc-sapo__2SWq4 {
+	background: url("https://www.sapo.vn/blog/images/banner-tin-tuc-su-kien.jpg") no-repeat 50%;
+}
+
+.bannerHeader_banner-header__6Zpui {
+	background: url("https://www.sapo.vn/blog/images/banner-tin-tuc-su-kien.jpg") no-repeat 50%;
+	height: 239px;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+}
+
+.bannerHeader_banner-header__6Zpui .bannerHeader_title__222UH h2 {
+	line-height: 1.2;
+	color: #42d086;
+	font-weight: 700;
+	font-size: 35px;
+	font-family: mon-bold;
+	margin-bottom: 15px;
+}
+
+.bannerHeader_banner-header__6Zpui .bannerHeader_title__222UH h2 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.bannerHeader_banner-header__6Zpui .bannerHeader_title__222UH form {
+	margin: 0;
+	padding: 0;
+}
+
+.bannerHeader_banner-header__6Zpui .bannerHeader_title__222UH form input {
+	height: 45px;
+	width: 560px;
+	border: none;
+	background: #fff;
+	padding: 0 30px;
+	line-height: 45px;
+	border-radius: 45px;
+	font-size: 17px;
+	font-family: mon-regular;
+	color: #929292;
+	font-weight: 600;
+}
+
+.bannerHeader_banner-header__6Zpui .bannerHeader_title__222UH form input {
+	height: 45px;
+	width: 560px;
+	border: none;
+	background: #fff;
+	padding: 0 30px;
+	line-height: 45px;
+	border-radius: 45px;
+	font-size: 17px;
+	font-family: mon-regular;
+	color: #929292;
+	font-weight: 600;
+}
+
+.bannerHeader_banner-header__6Zpui .bannerHeader_title__222UH form button {
+	border: none;
+	height: 45px;
+	line-height: 45px;
+	cursor: pointer;
+	margin-left: 20px;
+	font-weight: 700;
+}
+
+.btn-registration {
+	color: #fff;
+	background: #2ad38b;
+	background: linear-gradient(90deg, #2ad38b, #0cceb0);
+	border-radius: 45px;
+	display: inline-block;
+	line-height: 63px;
+	padding: 0 35px;
+	outline: none;
+	-webkit-user-select: none;
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	white-space: nowrap;
+	font-size: 16px;
+	transition: all .5s ease;
+}
+
+@media (max-width: 1700px) and (min-width: 1200px) {
+	.bannerHeader_banner-header__6Zpui {
+		background: url("https://www.sapo.vn/blog/images/banner-blog-home-large.png") no-repeat 50%;
+	}
+}
+
