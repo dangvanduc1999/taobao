@@ -194,22 +194,16 @@ window.onload = function () {
                   class="styles__FigureOptionWrapper-sc-8h5g7n-0 jvxsod ${isActive && "active"}"
                   title="${sku}"
                 >
-                  <div class="option-figure">
-                    <picture class="webpimg-container"
+                  <div class="option-figure" style="">
+                    <picture class="webpimg-container w-100 h-100"
                       ><source
                         type="image/webp"
-                        srcset="
-                          ${src} 1x,
-                          ${src} 2x
-                        " />
+                        src="
+                          ${src} 1x " />
                       <img
                         alt="thumbnail"
                         src="${src}"
-                        srcset="
-                          ${src} 1x,
-                          ${src} 2x
-                        "
-                        class="WebpImg__StyledImg-sc-h3ozu8-0 fWjUGo"
+                        class="WebpImg__StyledImg-sc-h3ozu8-0 w-100 h-100 object-fit-cover fWjUGo"
                     /></picture>
                   </div>
                   <span class="option-label">${title}</span>
@@ -235,10 +229,16 @@ window.onload = function () {
 			SlideWrapper.innerHTML += ` <div class="swiper-slide">
                   <img
                     src="${img.src}"
-                    class="w-100 h-100 object-fit-cover"
+                    class="w-100 h-100 object-fit-cover small-img"
                     alt="list image small product"
                   />
                 </div>`
+		})
+		document.querySelectorAll(".small-img").forEach((ele) => {
+			ele.addEventListener("click",(e) => {
+				const srcImage = ele.getAttribute("src")
+				document.querySelector("#big-image").src=srcImage
+			})
 		})
 	}
 	

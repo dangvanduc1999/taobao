@@ -39,3 +39,39 @@ const swiper = new Swiper(".swiper", {
         },
     },
 });
+
+const elementTabOnMinTablets =  document.querySelectorAll("ul.ul-tab li")
+elementTabOnMinTablets.forEach(ele => {
+    ele.addEventListener("click", (e) => {
+        const currentClass = ele.classList
+        if(currentClass.contains("active")) {
+            return;
+        }
+        const atrr = ele.getAttribute("data-href")
+        const contentTab = document.querySelector(atrr)
+        
+        const currentTabActive = document.querySelector("ul.ul-tab li.active")
+        const attrOfcurrenttabActive = currentTabActive.getAttribute("data-href")
+        const currentContentActive = document.querySelector(attrOfcurrenttabActive)
+        currentTabActive.classList.remove("active")
+        currentContentActive.classList.remove("active")
+        currentClass.add("active")
+        contentTab.classList.add("active")
+    })
+})
+
+const eleTabsOnMobile = document.querySelectorAll(".tabmobile .tab-name")
+
+eleTabsOnMobile.forEach(ele => {
+    ele.addEventListener("click", e => {
+        const currentTitle = ele.querySelector("h3")
+        const currentDes = ele.querySelector("div")
+        if (currentTitle.classList.contains("active")) {
+            currentTitle.classList.remove("active")
+            currentDes.classList.remove("active")
+        } else {
+            currentTitle.classList.add("active")
+            currentDes.classList.add("active")
+        }
+    })
+})
