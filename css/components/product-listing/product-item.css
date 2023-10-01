@@ -192,3 +192,11 @@
   overflow: hidden;
   white-space: normal;
 }
+.wish-list__btn {
+  cursor: pointer;
+  padding:5px ;
+}
+.wish-list__btn i {
+  color: #0c6dfd;
+  cursor: pointer;
+}

@@ -1,0 +1,231 @@
+.page-title-area.bg-25 {
+	background-image: url("../../../static/image/page-bg-5.jpg");
+}
+.page-title-area {
+	position: relative;
+	overflow: hidden;
+	padding-top: 285px;
+	padding-bottom: 150px;
+	text-align: center;
+	z-index: 1;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page-title-area::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	opacity: 0.7;
+}
+.page-title-area .page-title-content {
+	position: relative;
+	margin-top: -10px;
+}
+.page-title-area .page-title-content h2 {
+	margin-bottom: 15px;
+	font-size: 50px;
+	color: #000024;
+	font-weight: 700;
+}
+.page-title-area .page-title-content ul {
+	padding-left: 0;
+	list-style-type: none;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+.page-title-area .page-title-content ul li {
+	display: inline-block;
+	position: relative;
+	font-size: 16px;
+	padding-right: 15px;
+	margin-left: 15px;
+	font-weight: 500;
+}
+.page-title-area .page-title-content ul li::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: -3px;
+	background-color: #0383ff;
+	width: 1px;
+	height: 15px;
+	-webkit-transform: rotate(25deg);
+	transform: rotate(25deg);
+}
+.page-title-area .page-title-content ul li a {
+	color: #000024;
+	-webkit-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	text-decoration: none;
+}
+.page-title-area .page-title-content ul .active {
+	color: #0383ff;
+}
+
+.single-contact-info {
+	text-align: center;
+	-webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+	background-color: #ffffff;
+	margin-bottom: 30px;
+	padding: 30px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	border-radius: 4px;
+}
+.single-contact-info i , .single-contact-info p{
+	display: block;
+	color: #0383ff;
+	-webkit-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto 15px;
+	line-height: 50px;
+	border: 2px dotted #0383ff;
+	border-radius: 50%;
+}
+.single-contact-info p {
+	font-size: 20px;
+}
+.single-contact-info h3 {
+	-webkit-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	font-size: 22px;
+}
+.single-contact-info a {
+	color: #555555;
+	-webkit-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	display: block;
+	text-decoration: none;
+}
+.single-contact-info:hover {
+	background-color: #0383ff;
+}
+.single-contact-info:hover a {
+	color: #ffffff;
+}
+.single-contact-info:hover h3 {
+	color: #ffffff;
+}
+.single-contact-info:hover i {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+.single-contact-info:hover p {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+.ptb-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.section-title {
+	max-width: 750px;
+	margin: -5px auto 50px;
+	text-align: center;
+	position: relative;
+}
+.section-title h2:last-child {
+	margin-bottom: 0;
+	color: #000024;
+	font-weight: 700;
+}
+.main-contact-area #contactForm {
+	-webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+	background-color: #ffffff;
+	padding: 50px;
+}
+.main-contact-area .form-group {
+	margin-bottom: 30px;
+}
+.list-unstyled {
+	color: #dc3545;
+	font-size: 14px;
+	margin-top: 10px;
+}
+textarea.form-control {
+	min-height: calc(1.5em + 0.75rem + 2px);
+}
+.main-contact-area .form-group.checkboxs {
+	position: relative;
+}
+.main-contact-area .form-group.checkboxs #chb2 {
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+.main-contact-area .form-group.checkboxs p {
+	padding-left: 20px;
+}
+.main-contact-area .form-group.checkboxs p a {
+	color: #0383ff;
+}
+.default-btn {
+	font-size: 16px;
+	color: #ffffff;
+	padding: 15px 40px;
+	line-height: 1;
+	-webkit-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	text-align: center;
+	background-color: #0383ff;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: -5px;
+	outline: none;
+	border: none;
+}
+.email {
+	background-color: #febc00;
+}
+
+.email p {
+	font-size: 30px;
+	/*color: black;*/
+}
+
+.input-group {
+	max-width: 500px;
+}
+body {
+	background-color: #ffffff;
+}
+@media screen and (max-width: 995px) {
+	
+	
+	.email p {
+		font-size: 18px !important;
+	}
+	
+	.input-group {
+		max-width: 300px;
+	}
+	
+ 
+}
+
+
+
+@media screen and (max-width: 550px) {
+	
+	
+	.email p {
+		font-size: 15px !important;
+	}
+	
+	.input-group {
+		max-width: 200px;
+	}
+}
