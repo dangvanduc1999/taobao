@@ -1,0 +1,187 @@
+
+.bannerHeader_image-feature__Kg8W8 {
+	background-image: url("https://blog.dktcdn.net/articles/sapo-update-thang-6-2023-1.png");
+	position: relative;
+	height: auto;
+	min-height: 350px;
+	padding: 40px 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat !important;
+	background-size: 100% !important;
+}
+
+.bannerHeader_image-feature__Kg8W8:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: #000;
+	opacity: .7;
+	height: 100%;
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_breadcrumb__oR1eH {
+	line-height: 1.2;
+	font-size: 16px;
+	background: 0 0;
+	padding: 0 0 25px;
+	margin: 0;
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_breadcrumb__oR1eH ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_breadcrumb__oR1eH ul li {
+	padding-right: 15px;
+	margin-right: 5px;
+	position: relative;
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_breadcrumb__oR1eH ul li:after, .bannerHeader_image-feature__Kg8W8 .bannerHeader_breadcrumb__oR1eH ul li:before {
+	content: "";
+	height: 6px;
+	width: 2px;
+	background: #fff;
+	position: absolute;
+	right: 2px;
+	top: calc(50% - 2px);
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_breadcrumb__oR1eH ul li:after {
+	top: calc(50% + 2px);
+	transform: translateY(-50%) rotate(-135deg);
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_breadcrumb__oR1eH ul li a {
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+	cursor: pointer;
+	word-break: break-word;
+}
+
+.bannerHeader_image-feature__Kg8W8 h1 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 48px;
+	color: #fff;
+	padding-bottom: 24px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.bannerHeader_image-feature__Kg8W8 h1:after {
+	content: "";
+	width: 318px;
+	height: 1px;
+	background: #2b9b6a;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_post-info__J1tol {
+	font-size: 15px;
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_post-info__J1tol .bannerHeader_time-view__8A3ql {
+	margin-right: 35px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_post-info__J1tol .bannerHeader_time-view__8A3ql svg {
+	width: 12px;
+	height: 12px;
+	color: #fff;
+}
+
+.bannerHeader_image-feature__Kg8W8 .bannerHeader_post-info__J1tol .bannerHeader_time-view__8A3ql span {
+	color: #fff;
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.article_detail-content__WIfiH .article_box-content__JuniF {
+	min-height: 400px;
+	font-size: 17px;
+	color: #2d2d2d;
+	line-height: 32px;
+	padding: 45px 45px 0;
+}
+
+body {
+	background-color: #fff;
+}
+
+.article_sidebar-scroll__lmiOa {
+	right: 50%;
+	transform: translate3d(600px, 0, 0);
+	position: absolute;
+	top: 50px;
+	width: 237px;
+	z-index: 999;
+}
+
+.postDetailComponent_block-topic__40V10 {
+	margin-bottom: 40px;
+}
+
+.postDetailComponent_block-topic__40V10 h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #444;
+	line-height: 26px;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin: 0 0 13px;
+}
+
+.postDetailComponent_block-topic__40V10 h3 .postDetailComponent_a-link__cccb3, .postDetailComponent_block-topic__40V10 h3 span {
+	display: inline-block;
+	border-bottom: 2px solid #0fd186;
+	text-decoration: unset;
+}
+
+.postDetailComponent_block-topic__40V10 .postDetailComponent_content__LxglL .postDetailComponent_item__4B5pA {
+	border-bottom: 1px dashed #e5e5e5;
+	padding-bottom: 13px;
+	margin-bottom: 13px;
+	display: flex;
+	position: relative;
+	padding-left: 15px;
+}
+
+.postDetailComponent_block-topic__40V10 .postDetailComponent_content__LxglL .postDetailComponent_item__4B5pA:before {
+	content: "";
+	width: 4px;
+	height: 4px;
+	background: #0fd186;
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+
+.postDetailComponent_block-topic__40V10 .postDetailComponent_content__LxglL .postDetailComponent_item__4B5pA h4 {
+	margin-bottom: 0;
+}
+.postDetailComponent_block-topic__40V10 .postDetailComponent_content__LxglL .postDetailComponent_item__4B5pA h4 a {
+	display: block;
+	max-height: 60px;
+	overflow: hidden;
+	font-size: 13px;
+	line-height: 20px;
+	color: #444;
+	font-weight: 700;
+}
