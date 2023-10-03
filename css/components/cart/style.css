@@ -358,16 +358,3 @@
   cursor: pointer;
   margin: 15px 0px 0px;
 }
-.delete-address {
-  cursor: pointer;
-  background-color: #fff;
-}
-.delete-address i {
-  width: unset !important;
-  height: unset !important;
-  background-color: #fff !important;
-  
-}
-.delete-address:hover i {
-  color: red;
-}
