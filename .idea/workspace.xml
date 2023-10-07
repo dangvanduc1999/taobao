@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c456b62-010e-425a-8662-1dc3e0330658" name="Changes" comment="[fix] fix drop one to two line in text">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/product-listing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/articlebanner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/choose-us-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/contact-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/o2o.c874974b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/order-hang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/page-bg-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/image/payment-successful.avif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/checkout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/checkout/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components/product-listing/product-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/product-listing/product-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/product-listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/product-listing.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2Uc4iHbOhxJNh1MundOZTPHY0Af" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;update-header&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ducdang/Desktop/workspace/taobao&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/toast" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.checkout.html">
+    <configuration name="checkout.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/header.js/html/checkout.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/taobao/html/home.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.checkout.html" />
+        <item itemvalue="JavaScript Debug.home.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c456b62-010e-425a-8662-1dc3e0330658" name="Changes" comment="" />
+      <created>1693225660094</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693225660094</updated>
+      <workItem from="1693225661294" duration="7606000" />
+      <workItem from="1693535708083" duration="9114000" />
+      <workItem from="1693584231181" duration="2710000" />
+      <workItem from="1693745038528" duration="12133000" />
+      <workItem from="1693799409842" duration="538000" />
+      <workItem from="1693803816571" duration="3282000" />
+      <workItem from="1693843618715" duration="2430000" />
+      <workItem from="1694440430666" duration="1913000" />
+      <workItem from="1694443768084" duration="203000" />
+      <workItem from="1694858968111" duration="3664000" />
+      <workItem from="1694954524789" duration="643000" />
+      <workItem from="1695046421416" duration="10507000" />
+      <workItem from="1695445875447" duration="20239000" />
+      <workItem from="1695738142563" duration="116000" />
+      <workItem from="1695881320837" duration="11858000" />
+      <workItem from="1695906752513" duration="9162000" />
+      <workItem from="1695957547284" duration="6362000" />
+      <workItem from="1695965136114" duration="2800000" />
+      <workItem from="1695998714346" duration="6382000" />
+      <workItem from="1696150447561" duration="14735000" />
+      <workItem from="1696338286609" duration="1053000" />
+      <workItem from="1696653906322" duration="1205000" />
+    </task>
+    <task id="LOCAL-00001" summary="[Update] Update banner">
+      <option name="closed" value="true" />
+      <created>1693561626001</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693561626001</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[Update] Update css">
+      <option name="closed" value="true" />
+      <created>1693588694016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693588694016</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[feature] build page sending order listing">
+      <option name="closed" value="true" />
+      <created>1693806323012</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693806323012</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[update] update css">
+      <option name="closed" value="true" />
+      <created>1693806774251</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693806774251</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[update] update css">
+      <option name="closed" value="true" />
+      <created>1694441682263</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694441682263</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[update] update css">
+      <option name="closed" value="true" />
+      <created>1694954563229</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694954563229</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[update] update css">
+      <option name="closed" value="true" />
+      <created>1695054133506</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695054133506</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[update] update css">
+      <option name="closed" value="true" />
+      <created>1695054518341</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695054518341</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[feature] Build wishlist, update header and address for payment">
+      <option name="closed" value="true" />
+      <created>1695478084148</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695478084148</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[feature] Build wishlist, update header and address for payment">
+      <option name="closed" value="true" />
+      <created>1695965977887</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695965977887</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[feature] Build news list">
+      <option name="closed" value="true" />
+      <created>1696004821880</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696004821880</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[feature] Build news-detail, new contact and update wish list for product listing">
+      <option name="closed" value="true" />
+      <created>1696163861947</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696163861947</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[feature] update delete address">
+      <option name="closed" value="true" />
+      <created>1696164562249</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696164562249</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[fix] fix drop one to two line in text">
+      <option name="closed" value="true" />
+      <created>1696344830220</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1696344830220</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="[Update] Update banner" />
+    <MESSAGE value="[Update] Update css" />
+    <MESSAGE value="[feature] build page sending order listing" />
+    <MESSAGE value="[update] update css" />
+    <MESSAGE value="[feature] Build wishlist, update header and address for payment" />
+    <MESSAGE value="[feature] Build news list" />
+    <MESSAGE value="[feature] Build news-detail, new contact and update wish list for product listing" />
+    <MESSAGE value="[feature] update delete address" />
+    <MESSAGE value="[fix] update delete address" />
+    <MESSAGE value="Revert &quot;[feature] update delete address&quot;&#10;&#10;This reverts commit 9ebad14d00ff5536e9b4adf5f83e5b4a719af678." />
+    <MESSAGE value="[fix] fix drop one to two line in text" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] fix drop one to two line in text" />
+  </component>
+</project>

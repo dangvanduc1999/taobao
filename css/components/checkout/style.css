@@ -239,6 +239,7 @@
 	color: rgb(56, 56, 61);
 	margin-bottom: 2px;
 	font-weight: 600;
+	font-size: 13px;
 }
 
 .cTGPxG .customer_info p {
@@ -958,4 +959,18 @@
 	transform: rotate(90deg);
 	background: rgb(23, 86, 228);
 	box-shadow: 0 0 0 1px #000;
+}
+.delete-address {
+	cursor: pointer;
+	background-color: #fff;
+}
+.delete-address i {
+	width: unset !important;
+	height: unset !important;
+	background-color: #fff !important;
+	font-size: 14px !important;
+	
+}
+.delete-address:hover i {
+	color: red;
 }
