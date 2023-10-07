@@ -194,9 +194,15 @@
 }
 .wish-list__btn {
   cursor: pointer;
-  padding:5px ;
+  width: 20px ;
 }
-.wish-list__btn i {
+.wish-list__btn i.ri-heart-3-line {
   color: #0c6dfd;
   cursor: pointer;
+  font-size: 20px;
+}
+.wish-list__btn i.ri-heart-3-fill {
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
 }
