@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c456b62-010e-425a-8662-1dc3e0330658" name="Changes" comment="[update] Update css">
+    <list default="true" id="0c456b62-010e-425a-8662-1dc3e0330658" name="Changes" comment="[update] Update css checkout and add style for detail-order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/admin/detail-order.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/admin/detail-order.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/components/checkout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components/checkout/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/detail-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/detail-order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/status-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/status-order.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696657893215</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[update] Update css checkout and add style for detail-order">
+      <option name="closed" value="true" />
+      <created>1696760995840</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1696760995840</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +260,7 @@
     <MESSAGE value="Revert &quot;[feature] update delete address&quot;&#10;&#10;This reverts commit 9ebad14d00ff5536e9b4adf5f83e5b4a719af678." />
     <MESSAGE value="[fix] fix drop one to two line in text" />
     <MESSAGE value="[update] Update css" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] Update css" />
+    <MESSAGE value="[update] Update css checkout and add style for detail-order" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update] Update css checkout and add style for detail-order" />
   </component>
 </project>
