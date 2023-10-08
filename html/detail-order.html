@@ -436,7 +436,10 @@
 		</div>
 		<div class="col-lg-9 col-12 ">
 			<p>
-				Chi tiết đơn hàng #604055039 - <span> Giao hàng thành công</span>
+				Chi tiết đơn hàng <span class="fw-bold text-black">#604055039 </span>- <span class="text-success fw-bold"> Giao hàng thành công</span>
+				-<span class="text-warning fw-bold"> Đang giao hàng</span>
+				-<span class="text-danger fw-bold"> Đã hủy</span>
+
 			</p>
 			<div class="styles__StyledSection-sc-ri73gr-1 ukdFc">
 				<div class="title">Thông báo</div>
@@ -499,6 +502,7 @@
 						<th>Sản phẩm</th>
 						<th>Giá</th>
 						<th>Số lượng</th>
+						<th>Tình trạng</th>
 						<th>Giảm giá</th>
 						<th>Tạm tính</th>
 					</tr>
@@ -517,42 +521,47 @@
 									<p class="product-seller">Cung cấp bởi <a href="/cua-hang/midoctor">miDoctor</a>
 									</p>
 									<p class="product-sku">Sku: 6127991095632</p>
-									<div class="product-review">
+									<div class="product-review ">
 										<span>Chat với nhà bán</span><span>Viết nhận xét</span><a
 										href="/product-p66620428.html?spid=66795839"
-										target="_blank">Mua lại</a></div>
+										target="_blank" class="d-inline-block mt-2">Mua lại</a></div>
 								</div>
 							</div>
 						</td>
 						<td class="price ">155.000 ₫</td>
 						<td class="quantity">1</td>
+						<td class="quantity">
+							<button type="button" class="btn btn-warning text-white status-tag" >Đang chờ</button>
+							<button type="button" class="btn btn-success text-white status-tag" >Đã giao</button>
+							<button type="button" class="btn btn-danger text-white status-tag" >Đã hủy</button>
+						</td>
 						<td class="discount-amount">25.000 ₫</td>
 						<td class="raw-total">130.000 ₫</td>
 					</tr>
 					</tbody>
 					<tfoot>
 					<tr>
-						<td colspan="4"><span>Tạm tính</span></td>
+						<td colspan="5"><span>Tạm tính</span></td>
 						<td>155.000 ₫</td>
 					</tr>
 					<tr>
-						<td colspan="4"><span>Phí vận chuyển</span></td>
+						<td colspan="5"><span>Phí vận chuyển</span></td>
 						<td>44.000 ₫</td>
 					</tr>
 					<tr>
-						<td colspan="4"><span>Khuyến mãi vận chuyển</span></td>
+						<td colspan="5"><span>Khuyến mãi vận chuyển</span></td>
 						<td>-30.000 ₫</td>
 					</tr>
 					<tr>
-						<td colspan="4"><span>Giảm giá</span></td>
+						<td colspan="5"><span>Giảm giá</span></td>
 						<td>-25.000 ₫</td>
 					</tr>
 					<tr>
-						<td colspan="4"><span>Tổng cộng</span></td>
+						<td colspan="5"><span>Tổng cộng</span></td>
 						<td><span class="sum">144.000 ₫</span></td>
 					</tr>
 					<tr>
-						<td colspan="5">
+						<td colspan="6">
 							<div class="styles__StyledLink-sc-1nu25mz-0 hdcnUR">Xem hóa đơn</div>
 						</td>
 					</tr>

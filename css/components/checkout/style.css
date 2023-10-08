@@ -963,6 +963,7 @@
 .delete-address {
 	cursor: pointer;
 	background-color: #fff;
+	margin-left: auto;
 }
 .delete-address i {
 	width: unset !important;

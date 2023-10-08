@@ -309,6 +309,11 @@ a {
 .ukdFc .content .notifications__item .comment {
     text-align: left;
 }
+.status-tag {
+    font-size: 12px;
+    max-height: 32px;
+    margin-bottom: 10px;
+}
 
 @media screen and (max-width: 765px) {
     .cRRvpz {
