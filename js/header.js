@@ -1,12 +1,14 @@
 const searchBar = document.getElementById('search-bar');
 const inputGroupText = document.getElementById('header-select');
-
+const searchBtn = document.getElementById('button-addon2');
 searchBar.addEventListener('focus', () => {
 	inputGroupText.classList.add('input-focused');
+	searchBtn.classList.add("btn-border");
 });
 
 searchBar.addEventListener('blur', () => {
 	inputGroupText.classList.remove('input-focused');
+	searchBtn.classList.remove("btn-border");
 });
 
 function countdown(targetDate, daysElement, hoursElement, minutesElement, secondsElement) {

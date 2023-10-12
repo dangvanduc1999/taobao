@@ -29,6 +29,7 @@
 	box-shadow: none;
 }
 
+
 .nav-item.active .nav-link {
 	background-color: rgba(64, 137, 255, 0.729);
 	color: white;
@@ -40,16 +41,27 @@
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
 }
-#button-addon2:hover {
+.btn-border{
+	border-top-color: #86b7fe !important;
+	border-bottom-color: #86b7fe !important;
+	border-right-color: #86b7fe !important;
+}
+#button-addon2:hover,#button-addon4:hover {
 	color :#86b7fe;
 	background-color: #fff;
 }
 
-#search-bar:focus + #button-addon2 {
-	border-color: #86b7fe;
+#search-bar:focus > #button-addon2   {
+	border-top-color: #86b7fe !important;
 	border-left: 0px;
 }
-
+#button-addon4 , #button-addon4 i{
+	cursor: pointer;
+}
+#search-bar:focus + #button-addon4  {
+	border-top-color: #86b7fe !important;
+	border-bottom-color: #86b7fe !important;
+}
 .account__des {
 
 }
@@ -162,6 +174,9 @@
 
 .search-res {
 	border: 1px solid #dee2e6;
+}
+#header-select.input-focused {
+	border: none;
 }
 
 #search-bar-mobile:focus {
