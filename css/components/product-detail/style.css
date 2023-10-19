@@ -212,3 +212,61 @@
 .swiper-button-prev::after {
   display: none;
 }
+
+.jgDdBJ {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-top: 10px;
+}
+
+.iuHuWV {
+  cursor: pointer;
+  display: block;
+  color: rgb(36, 36, 36);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  position: relative;
+  background-color: white;
+  outline: 0px;
+  padding: 4px 16px;
+  align-items: flex-start;
+  gap: 8px;
+}
+.iuHuWV span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.iuHuWV .selected-indicator {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  display: none;
+}
+.iuHuWV .border {
+  position: absolute;
+  inset: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.iuHuWV.active {
+  cursor: default;
+}
+.iuHuWV:hover > .selected-indicator, .iuHuWV.active > .selected-indicator {
+  display: block;
+}
+.iuHuWV:hover  .border {
+  border: 2px solid rgb(10, 104, 255) !important;
+}
+.iuHuWV.active  .border {
+  border: 2px solid rgb(10, 104, 255) !important;
+}
+.iuHuWV:hover > .selected-indicator, .iuHuWV.active > .selected-indicator {
+  display: block;
+}
+
+
