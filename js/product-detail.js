@@ -334,6 +334,15 @@ window.onload = function () {
 		},
 	});
 	
+	const listPackageSize = document.querySelectorAll(".iuHuWV")
+	if (listPackageSize.length > 0 ) {
+		listPackageSize.forEach(package => {
+			package.addEventListener("click", function () {
+				document.querySelector(".iuHuWV.active").classList.remove("active")
+				package.classList.add("active")
+			})
+		})
+	}
 	
 	
 	
