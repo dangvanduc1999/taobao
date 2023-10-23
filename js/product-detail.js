@@ -275,7 +275,7 @@ window.onload = function () {
 		})
 	}
 	
-	loadData(mockData)
+	// loadData(mockData)
 	
 	document.querySelectorAll('.jvxsod').forEach(ele => {
 		ele.addEventListener('click', function (e) {
@@ -339,7 +339,7 @@ window.onload = function () {
 		listPackageSize.forEach(package => {
 			const attr = package.getAttribute("data-package-name")
 			package.addEventListener("click", function () {
-				const className =`div.iuHuWV.active[data-package-name="${attr}"]`
+				const className =`div.iuHuWV.active[data-package-name="${attr}"],div.jvxsod.active[data-package-name="${attr}"]`
 				document.querySelector(className).classList.remove("active")
 				package.classList.add("active")
 			})

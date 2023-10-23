@@ -268,5 +268,10 @@
 .iuHuWV:hover > .selected-indicator, .iuHuWV.active > .selected-indicator {
   display: block;
 }
+.jvxsod.iuHuWV {
+  padding: unset;
+}
 
-
+.swiper-slide .small-img{
+  cursor: pointer;
+}
