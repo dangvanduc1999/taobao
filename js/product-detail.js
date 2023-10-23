@@ -348,5 +348,19 @@ window.onload = function () {
 	
 	
 	
+	const myModal = new bootstrap.Modal('#loading-modal', {
+		keyboard: false
+	})
+	const myModalEl = document.getElementById('loading-modal')
+	
+	myModalEl.addEventListener("shown.bs.modal",  () => {
+		setTimeout(() => {
+			myModal.hide()
+		},3000)
+	} )
+	
+	
+	
+	
 	
 }
