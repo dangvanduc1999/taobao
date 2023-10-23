@@ -337,8 +337,10 @@ window.onload = function () {
 	const listPackageSize = document.querySelectorAll(".iuHuWV")
 	if (listPackageSize.length > 0 ) {
 		listPackageSize.forEach(package => {
+			const attr = package.getAttribute("data-package-name")
 			package.addEventListener("click", function () {
-				document.querySelector(".iuHuWV.active").classList.remove("active")
+				const className =`div.iuHuWV.active[data-package-name="${attr}"]`
+				document.querySelector(className).classList.remove("active")
 				package.classList.add("active")
 			})
 		})
