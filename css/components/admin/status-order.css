@@ -1,8 +1,25 @@
+.tab-status__order{
+    overflow: auto;
+}
+.tab-status__order .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 970px;
+}
+.tab-status__order .nav-item {
+    width: 14.6666667%;
+    flex-shrink: 0;
+}
 .tab-status__order .nav-link {
     color: rgb(128, 128, 137);
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
 }
 .tab-status__order .nav-link.active{
     color: rgb(13, 92, 182);
+    font-weight: normal;
+    
 }
 .form-control:focus {
     outline: none;
@@ -170,3 +187,10 @@ p {
      margin-left: 8px;
      text-decoration: none;
  }
+
+.title__page {
+    font-size: 1.5rem;
+    line-height: 21px;
+    font-weight: 300;
+    margin: 20px 0px 15px;
+}

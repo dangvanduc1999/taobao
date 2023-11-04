@@ -133,11 +133,11 @@
                   <span class="visually-hidden">unread messages</span>
                 </span>
 					</a>
-					<button class="btn btn-primary ms-auto d-block d-sm-block d-md-block d-lg-none"
+					<div class="  align-items-center justify-content-center text-primary text-2xl  ms-auto d-flex d-sm-flex d-md-flex d-lg-none"
 					        type="button" data-bs-toggle="offcanvas"
 					        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-						<i class="ri-bar-chart-horizontal-fill"></i>
-					</button>
+						<i class="ri-layout-left-line" style="font-size: 25px ; line-height :25px"></i>
+					</div>
 					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
 					     aria-labelledby="offcanvasExampleLabel">
 						<div class="offcanvas-header">
@@ -698,15 +698,16 @@
 										<thead>
 										<tr>
 											<th scope="col-1" class="text-center">Stt</th>
-											<th scope="col-2" class="text-center">Mã vận đơn</th>
-											<th scope="col-2" class="text-center">Danh mục/ghi chú
+											<th scope="col-3" class="text-center">Mã vận đơn</th>
+											<th scope="col-1" class="text-center">Danh mục/ghi chú
 											</th>
-											<th scope="col-5" class="text-center">Ghi chú</th>
+											<th scope="col-3" class="text-center">Ghi chú</th>
 											<th scope="col-1" class="text-center">Số lượng kiện</th>
-											<th scope="col"
-											    class="d-flex align-items-center justify-content-center">
-												<div class="add-row">
-													<i class="ri-add-line"></i>
+											<th scope="col-1">
+												<div class="d-flex align-items-center justify-content-center w-100 h-100">
+													<div class="add-row">
+														<i class="ri-add-line"></i>
+													</div>
 												</div>
 											</th>
 										</tr>
@@ -714,12 +715,12 @@
 										<tbody id="body-code">
 										<tr data-row="1">
 											<td class="col-1 text-center">1</td>
-											<td class="col-2">
+											<td class="col-3">
 												<div>
 													<input class="form-control" type="text"/>
 												</div>
 											</td>
-											<td class="col-3">
+											<td class="col-1">
 												<div>
 													<select class="form-select form-select-lg mb-3"
 													        aria-label="Large select example">
@@ -731,21 +732,23 @@
 													</select>
 												</div>
 											</td>
-											<td>
+											<td class="col-3">
 												<div>
                                                     <textarea class="form-control"
                                                               placeholder="ghi chú"> </textarea>
 												</div>
 											</td>
-											<td>
+											<td class="col-1">
 												<div>
 													<input class="form-control" type="number"
 													       style="appearance: none"/>
 												</div>
 											</td>
-											<td data-row="1">
-												<div class="minus-row" data-row="1">
-													<i class="ri-subtract-line" data-row="1"></i>
+											<td data-row="1" class="">
+												<div class="w-100 h-100 d-flex align-items-center justify-content-center">
+													<div class="minus-row" data-row="2">
+														<i class="ri-subtract-line" data-row="2"></i>
+													</div>
 												</div>
 											</td>
 										</tr>
@@ -781,8 +784,10 @@
 												</div>
 											</td>
 											<td data-row="2">
-												<div class="minus-row" data-row="2">
-													<i class="ri-subtract-line" data-row="2"></i>
+												<div class="w-100 h-100 d-flex align-items-center justify-content-center">
+													<div class="minus-row" data-row="2">
+														<i class="ri-subtract-line" data-row="2"></i>
+													</div>
 												</div>
 											</td>
 										</tr>
