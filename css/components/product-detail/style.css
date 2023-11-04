@@ -271,6 +271,12 @@
 .jvxsod.iuHuWV {
   padding: unset;
 }
+.jvxsod img.selected-indicator{
+  display: none;
+}
+.jvxsod.active img.selected-indicator{
+  display: block;
+}
 
 .swiper-slide .small-img{
   cursor: pointer;

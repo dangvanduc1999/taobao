@@ -186,6 +186,14 @@
 #search-bar-mobile:focus + .search-res {
 	border: 1px solid #86b7fe;
 }
+.bar {
+	width: 20px;
+	height: 2px;
+	background-color: black;
+	margin-bottom: 4px;
+	transition: all .5s  ease-in-out;
+	cursor: pointer;
+}
 
 @media screen and (max-width: 1135px) {
 	header a span {

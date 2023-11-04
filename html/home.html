@@ -227,11 +227,17 @@
 							<span class="visually-hidden">unread messages</span>
 						</span>
 					</a>
-					<button class="btn btn-primary ms-auto d-block d-sm-block d-md-block d-lg-none"
-					        type="button" data-bs-toggle="offcanvas"
-					        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-						<i class="ri-bar-chart-horizontal-fill"></i>
-					</button>
+					<label class="ms-auto" for="checkbox-toggle">
+						<input type="checkbox" hidden  id="checkbox-toggle">
+						<div class=" btn-toggle-custom ms-auto d-block d-sm-block d-md-block d-lg-none"
+						     data-bs-toggle="offcanvas"
+						     data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+							<div class="bar top"></div>
+							<div class="bar middle"></div>
+							<div class="bar bottom"></div>
+						</div>
+					</label>
+
 					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
 					     aria-labelledby="offcanvasExampleLabel">
 						<div class="offcanvas-header">
@@ -1182,24 +1188,24 @@
 	</div>
 
 </section>
-<div class="email py-4">
-	<div class="w-100 h-100 email-wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="d-flex align-items-center justify-content-between">
-						<p class="flex-shrink-0 fw-bold mb-0">Subcribe our newsletter</p>
-						<div class="input-group ">
-							<input type="text" class="form-control py-2 px-3" placeholder="Subcribe with your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-							<span class="input-group-text" id="basic-addon2"><i class="ri-mail-volume-line"></i></span>
-						</div>
-					</div>
+<!--<div class="email py-4">-->
+<!--	<div class="w-100 h-100 email-wrapper">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-12">-->
+<!--					<div class="d-flex align-items-center justify-content-between">-->
+<!--						<p class="flex-shrink-0 fw-bold mb-0">Subcribe our newsletter</p>-->
+<!--						<div class="input-group ">-->
+<!--							<input type="text" class="form-control py-2 px-3" placeholder="Subcribe with your email" aria-label="Recipient's username" aria-describedby="basic-addon2">-->
+<!--							<span class="input-group-text" id="basic-addon2"><i class="ri-mail-volume-line"></i></span>-->
+<!--						</div>-->
+<!--					</div>-->
 
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
 
 
 <!-- footer -->
