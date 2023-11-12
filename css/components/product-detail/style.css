@@ -281,3 +281,22 @@
 .swiper-slide .small-img{
   cursor: pointer;
 }
+.wish-list__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wish-list__btn i {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.wish-list__btn i.ri-heart-3-line {
+  color: #0c6dfd;
+  cursor: pointer;
+}
+.wish-list__btn i.ri-heart-3-fill {
+  color: red;
+  cursor: pointer;
+}
