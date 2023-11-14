@@ -67,6 +67,7 @@
 }
 .dDfbLj {
   height: 72px;
+  margin-bottom: 10px;
 }
 .bqaPbq .name {
   margin-top: 4px;
@@ -74,7 +75,7 @@
 .bqaPbq .name > h3 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   white-space: break-spaces;
   font-weight: 400;
@@ -206,7 +207,7 @@
 }
 .wish-list__btn {
   cursor: pointer;
-  width: 20px ;
+  width: 20px;
 }
 .wish-list__btn i.ri-heart-3-line {
   color: #0c6dfd;
