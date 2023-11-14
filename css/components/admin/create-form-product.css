@@ -41,3 +41,10 @@
     font-weight: 300;
     margin: 20px 0px 15px;
 }
+.table {
+    width: 930px;
+}
+.wrapper-table {
+    width: 100%;
+    overflow: auto;
+}
