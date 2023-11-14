@@ -49,6 +49,8 @@
   margin-bottom: 5px;
   line-height: 20px;
   text-decoration: none;
+  max-width: 216.81px;
+  word-break: break-all;
 }
 .product_des span:first-child {
   color: #fede51;
